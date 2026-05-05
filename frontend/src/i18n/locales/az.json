@@ -1,0 +1,212 @@
+{
+  "meta": { "title": "AzerScope Beta | Gecə səmasını planlaşdırma tətbiqi" },
+  "nav": {
+    "features": "Özəlliklər",
+    "tools": "Alətlər",
+    "trust": "Məlumat və Etibar",
+    "faq": "Sual-Cavab",
+    "beta": "Telegram Beta",
+    "download": "Yüklə"
+  },
+  "hero": {
+    "badge": "İctimai Beta · Xətalar ola bilər",
+    "brand": "AzerScope",
+    "tagline": "See beyond",
+    "kicker": "Precision in Darkness.",
+    "title": "Gecə səmasını <span class=\"gold\">əminliklə</span> planlaşdırın.",
+    "subtitle": "AzerScope astronomiya həvəskarlarına hava şəraiti, səmanın görünməsi, alətlər, tədbirlər və qeydlər vasitəsilə müşahidələri planlaşdırmağa kömək edir.",
+    "ctaPrimary": "Tezliklə Yüklə",
+    "ctaSecondary": "Telegram Beta-ya qoşul",
+    "store1s": "Yüklə",
+    "store1": "App Store (Tezliklə)",
+    "store2s": "Yüklə",
+    "store2": "Google Play (Tezliklə)",
+    "note": "Bu saytda abunə satılmır. Alış  və bərpa əməliyyatları mobil tətbiq daxilində (mağaza qaydalarına uyğun) həyata keçirilir.",
+    "guestLabel": "Qonaq rejimi mövcuddur",
+    "guest1": "Ana səhifə",
+    "guest2": "Hava",
+    "guest3": "Səma"
+  },
+  "overview": {
+    "label": "Məhsul",
+    "title": "<span>Real müşahidə gecələri</span> üçün yaradılıb",
+    "sub": "Gecə rejimi (UX), praktik hesablamalar və çölə çıxmazdan əvvəl faydalı qərarlar.",
+    "s1": "Əsas bölmələr",
+    "s2": "Astro alətlər",
+    "s3": "İnterfeys dilləri",
+    "s4": "Cari mərhələ"
+  },
+  "features": {
+    "label": "Əsas Təcrübə",
+    "title": "Müşahidə sessiyasından <span>əvvəl, zamanı və sonra</span>",
+    "sub": "AzerScope müşahidə mühitini, öyrənmə materiallarını, hadisələri və qeydiyyatı bir mobil iş axınında birləşdirir.",
+    "weather": {
+      "t": "Hava şəraiti",
+      "d": "Gecəyə uyğun hava göstəriciləri, saatlıq proqnoz: buludluluq, rütubət, şeh nöqtəsi, külək və işıq çirklənməsi."
+    },
+    "sky": {
+      "t": "Səma",
+      "d": "Məkanınız və vaxtınız üçün görünən obyektlər: Günəş, Ay, planetlər və dərin kosmos obyektləri üçün praktik göstərişlər."
+    },
+    "guide": {
+      "t": "AstroGuide",
+      "d": "Hadisələr, astronomik təqvim, alətlər mərkəzi və bürclərin önizləməsi üçün kurasiya olunmuş bölmə."
+    },
+    "lab": {
+      "t": "AstroLab",
+      "d": "Teqlər, seçilmiş materiallar və öyrənmə üçün ətraflı məlumat səhifələri olan kitabxana."
+    },
+    "events": {
+      "t": "Hadisələr",
+      "d": "Tədbirlər siyahısı, iştirakın təsdiqlənməsi, səfər tarixçəsi və profil inteqrasiyası."
+    },
+    "obs": {
+      "t": "Müşahidələr",
+      "d": "Qeydlər və sessiya konteksti ilə şəxsi müşahidə jurnalı (filtr və statistika dəstəyi ilə)."
+    }
+  },
+  "screens": {
+    "label": "Ekranlar",
+    "title": "<span>Qaranlıq şərait</span> üçün uyğunlaşdırılmış interfeys",
+    "sub": "Hazırda yer tutucu skrinşotlar istifadə olunur. Buraxılışdan əvvəl real tətbiq ekranları ilə əvəz ediləcək.",
+    "i1": "Ana səhifə",
+    "i2": "Hava",
+    "i3": "Səma",
+    "i4": "AstroGuide",
+    "i5": "Hadisələr",
+    "i6": "Profil"
+  },
+  "tools": {
+    "label": "AstroAlətlər",
+    "title": "Dekorativ vidjetlər deyil, <span>real hesablamalar</span>",
+    "sub": "Müşahidəçilər və astrofotoqraflar üçün tətbiqdaxili alətlər.",
+    "t1": "Böyütmə",
+    "d1": "Teleskopun fokus məsafəsi / okulyarın fokus məsafəsi.",
+    "t2": "Həqiqi FOV",
+    "d2": "Həqiqi görünüş sahəsi və Ayın kadr daxilindəki ölçüsü.",
+    "t3": "Koordinat Çevirici",
+    "d3": "Saat (HMS) və dərəcə (DMS) formatından onluq kəsrə çevrilmə.",
+    "t4": "Filtr Seçimi",
+    "d4": "Obyektə və şəraitə uyğun filtr tövsiyələri.",
+    "t5": "Ekspozisiya Qaydası",
+    "d5": "Fokus məsafəsi və sensora görə maksimum ekspozisiya təxmini.",
+    "t6": "Kompas",
+    "d6": "Kalibrləmə vəziyyəti ilə sensor əsaslı istiqamətlənmə.",
+    "t7": "Netlik və Fokus",
+    "d7": "Mükəmməl gecə çəkilişləri üçün sahə dərinliyinin hesablanması.",
+    "t8": "Daha çoxu yoldadır",
+    "d8": "FOV planlayıcısı, doğuş/batış köməkçiləri, Ay fazası alətləri."
+  },
+  "pricing": {
+    "label": "Tariflər",
+    "title": "Şəffaf qiymət. <span>Yalnız tətbiqdə satınalma.</span>",
+    "sub": "Bu statik tanıtım səhifəsidir. Mağaza qaydalarına görə ödənişlər yalnız tətbiq daxilində aparılır.",
+    "monthly": "Aylıq",
+    "yearly": "İllik",
+    "perMonth": "aylıq",
+    "perYear": "illik",
+    "caption": "İllik tarif planlaşdırma üçündür. Yekun məbləğ vergi və bölgəyə görə dəyişə bilər.",
+    "recommended": "Tövsiyə olunan",
+    "buy": "Tətbiqdə al",
+    "pro1": "Qonaq rejimidən kənar geniş giriş",
+    "pro2": "Jurnal və profil funksiyaları",
+    "pro3": "Tədbirlərdə iştirak",
+    "pro4": "Kommersiya planı (tətbiqdə alınır)",
+    "prem1": "PRO-dakı hər şey",
+    "prem2": "Daha yüksək cihaz limiti (5 cihaz)",
+    "prem3": "Daimi müşahidəçilər üçün ideal",
+    "prem4": "Kommersiya planı (tətbiqdə alınır)",
+    "elite1": "Hami / Sponsor səviyyəsi",
+    "elite2": "Layihənin inkişafına dəstək",
+    "elite3": "Premium səviyyəli giriş",
+    "elite4": "İllik seçim premium mövqeyini qoruyur",
+    "disclaimer": "Mağaza qaydası: Sayt qiymətləri yalnız məlumat üçündür və ödəniş qəbul etmir."
+  },
+  "access": {
+    "label": "Giriş",
+    "title": "Tamamilə pulsuz. <span>Hamı üçün.</span>",
+    "freeTitle": "Tamamilə pulsuz. <span>Hamı üçün.</span>",
+    "freeSub": "AzerScope bütün istifadəçilər üçün pulsuzdur. Xüsusi proqramlar icmalara əlavə tanınma təqdim edir.",
+    "sub": "AzerScope bütün istifadəçilər üçün pulsuzdur.",
+    "guestT": "Tam Giriş — Pulsuz",
+    "guestD": "Bütün əsas funksiyalar pulsuzdur: Ana səhifə, Hava, Səma, AstroGuide, AstroLab, Hadisələr və Müşahidələr hamıya açıqdır.",
+    "noFree": "100% Pulsuz",
+    "hac": "“Həvəskar Astronomlar Cəmiyyəti” İB üzvləri xüsusi tarif əldə edirlər, çünki AzerScope icmaya sponsorluq edir.",
+    "hacTag": "İcma sponsoru girişi",
+    "edu": "Bakı Dövlət Universitetinin astronomiya klubu üzvləri EDU girişi əldə edə bilərlər.",
+    "eduTag": "Təhsil girişi",
+    "vol": "Proqram üzrə seçilmiş könüllülər üçün giriş.",
+    "volTag": "Könüllü girişi",
+    "gen": "Dəvət olunmuş xüsusi qonaqlar üçün hədiyyə planı.",
+    "genTag": "Fəxri / Qonaq girişi"
+  },
+  "trust": {
+    "label": "Məlumat və Etibar",
+    "title": "İzlənilə bilən mənbələr və <span>internet olmadan hesablamalar</span>",
+    "sub": "AzerScope mərkəzləşdirilmiş məzmunu və hava proqnozunu cihazdaxili hesablamalarla birləşdirərək sahədə etibarlılığı təmin edir.",
+    "wT": "Hava Aqreqasiyası",
+    "wD": "Hava məlumatları ictimai mənbələrdən toplanır və gecə müşahidələri üçün təqdim edilir.",
+    "nT": "NOAA SWPC",
+    "nD": "Kosmik hava göstəriciləri üçün NOAA SWPC məlumatlarından istifadə olunur.",
+    "aT": "Astronomy Engine",
+    "aD": "Görünürlük hesablamaları cihazın vaxtı və koordinatları əsasında Astronomy Engine-ə söykənir.",
+    "lT": "İşıq Çirklənməsi",
+    "lD": "İşıq çirklənməsi indeksi Clear Outside xəritə kontekstindən götürülür.",
+    "pT": "Məzmunun İdarə Edilməsi",
+    "pD": "Məzmun, hadisələr və istifadəçi məlumatları PocketBase vasitəsilə idarə olunur.",
+    "rT": "Müşahidə yerində etibarlılıq",
+    "rD": "Daxili alqoritmlər sayəsində tətbiq internet olmayan yerlərdə də faydalı qalır."
+  },
+  "partners": {
+    "label": "Tərəfdaşlar",
+    "title": "Logolar üçün <span>tərəfdaş bloku</span>",
+    "sub": "Hazırda yer tutuculardır. Rəsmi logolar və linklərlə əvəz olunacaq.",
+    "logo": "Logo",
+    "type1": "İcma / Təşkilat",
+    "type2": "Universitet / Klub",
+    "type3": "Media / Sponsor",
+    "type4": "Rəsədxana / Araşdırma"
+  },
+  "faq": {
+    "label": "Sual-Cavab",
+    "title": "Beta-ya qoşulmazdan <span>əvvəl</span>",
+    "sub": "Satınalma, giriş qaydaları və beta gözləntiləri.",
+    "q1": "Niyə saytda abunə ala bilmirəm?",
+    "a1": "Sayt yalnız məlumat xarakterlidir. Abunəlik, yeniləmə və bərpa yalnız tətbiq daxilində mümkündür.",
+    "q2": "Pulsuz versiya varmı?",
+    "a2": "Xeyr. AzerScope yalnız məhdud qonaq rejimi təklif edir (Ana səhifə, Hava, Səma).",
+    "q3": "Beta nə deməkdir?",
+    "a3": "Tətbiq işləkdir, lakin inkişaf edir. Xətalar və tamamlanmamış bölmələr ola bilər.",
+    "q4": "Mağazadakı qiymət saytla eyni olacaq?",
+    "a4": "Mağaza qiymətləri vergilər və regional valyuta qaydalarına görə fərqlənə bilər.",
+    "q5": "Xüsusi giriş planlarını kimlər alır?",
+    "a5": "HAC üzvləri, BDU astronomiya klubu üzvləri, seçilmiş könüllülər və dəvət olunmuş qonaqlar.",
+    "q6": "Beta yeniliklərini haradan izləyim?",
+    "a6": "Elanlar, sınaq yeniləmələri və qeydlər üçün Telegram kanalımızı izləyin."
+  },
+  "cta": {
+    "label": "Beta Giriş",
+    "title": "Səmanı daha yaxşı izləyin. <span>AzerScope beta-ya qoşulun.</span>",
+    "sub": "Mağaza linkləri rəsmi buraxılışa qədər gizli qalacaq. Telegram əsas ünsiyyət kanalıdır.",
+    "dl": "Tezliklə Yüklə",
+    "tg": "Telegram Beta-nı aç"
+  },
+  "footer": {
+    "desc": "Həvəskarlar və astrofotoqraflar üçün gecə müşahidə planlayıcısı. İnkişaf mərhələsi.",
+    "product": "Məhsul",
+    "company": "Şirkət",
+    "legal": "Hüquqi",
+    "features": "Özəlliklər",
+    "tools": "AstroAlətlər",
+    "plans": "Tariflər",
+    "access": "Giriş Növləri",
+    "trust": "Məlumat və Etibar",
+    "partners": "Tərəfdaşlar",
+    "beta": "Beta Kanalı",
+    "faq": "Mual-Cavab",
+    "privacy": "Məxfilik Siyasəti",
+    "terms": "İstifadə Şərtləri",
+    "store": "Mağaza Linkləri (Tezliklə)",
+    "copy": "© 2026 AzerScope. Beta səhifəsi."
+  }
+}
