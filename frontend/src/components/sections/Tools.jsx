@@ -9,7 +9,6 @@ const toolsList = [
   { k:'t5', icon:<Timer size={18}/> },
   { k:'t6', icon:<Compass size={18}/> },
   { k:'t7', icon:<Aperture size={18}/> },
-  { k:'t8', icon:<Wrench size={18}/> },
 ];
 
 const Tools = () => {

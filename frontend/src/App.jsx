@@ -10,6 +10,12 @@ import './styles/index.css';
 function App() {
   return (
     <Router>
+      <div className="cosmic-bg" aria-hidden="true">
+        <div className="cosmic-orb cosmic-orb--1" />
+        <div className="cosmic-orb cosmic-orb--2" />
+        <div className="cosmic-orb cosmic-orb--3" />
+      </div>
+      <div className="content-layer">
       <Header />
       <main>
         <Routes>
@@ -19,6 +25,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      </div>
     </Router>
   );
 }

@@ -1,4 +1,4 @@
-/* ─── Tokens ─────────────────────────────────────── */
+ /* ─── Tokens ─────────────────────────────────────── */
 :root {
   --bg:            #020710;
   --bg-card:       #060d20;
@@ -14,6 +14,56 @@
   --radius-sm:     12px;
   --nav-h:         68px;
 }
+
+/* ─── Cosmic background ──────────────────────────── */
+.cosmic-bg {
+  position: fixed; inset:0; z-index:0;
+  overflow:hidden; pointer-events:none;
+}
+.cosmic-orb {
+  position:absolute; border-radius:50%;
+  will-change:transform;
+  filter:blur(60px);
+  opacity:.6;
+}
+.cosmic-orb--1 {
+  width:600px; height:600px;
+  top:-10%; left:-8%;
+  background:radial-gradient(circle, rgba(30,80,180,.55) 0%, transparent 70%);
+  animation:cosmic-drift-1 50s ease-in-out infinite alternate;
+}
+.cosmic-orb--2 {
+  width:700px; height:700px;
+  top:30%; right:-12%;
+  background:radial-gradient(circle, rgba(120,40,160,.45) 0%, transparent 70%);
+  animation:cosmic-drift-2 60s ease-in-out infinite alternate;
+}
+.cosmic-orb--3 {
+  width:550px; height:550px;
+  bottom:-8%; left:25%;
+  background:radial-gradient(circle, rgba(20,100,140,.45) 0%, transparent 70%);
+  animation:cosmic-drift-3 45s ease-in-out infinite alternate;
+}
+@keyframes cosmic-drift-1 {
+  0%   { transform:translate(0,0) scale(1); }
+  100% { transform:translate(80px,60px) scale(1.1); }
+}
+@keyframes cosmic-drift-2 {
+  0%   { transform:translate(0,0) scale(1); }
+  100% { transform:translate(-60px,80px) scale(1.08); }
+}
+@keyframes cosmic-drift-3 {
+  0%   { transform:translate(0,0) scale(1); }
+  100% { transform:translate(70px,-50px) scale(1.12); }
+}
+@media (max-width:640px) {
+  .cosmic-orb--3 { display:none; }
+  .cosmic-orb--1 { width:350px; height:350px; filter:blur(60px); }
+  .cosmic-orb--2 { width:400px; height:400px; filter:blur(60px); }
+}
+
+/* ─── Content layer (above cosmic bg) ────────────── */
+.content-layer { position:relative; z-index:1; }
 
 /* ─── Reset ──────────────────────────────────────── */
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
