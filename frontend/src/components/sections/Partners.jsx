@@ -1,11 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import { Image } from 'lucide-react';
 
 const partners = [
-  { name:'Partner 01', t:'type1' },
-  { name:'Partner 02', t:'type2' },
-  { name:'Partner 03', t:'type3' },
-  { name:'Partner 04', t:'type4' },
+  { key: 'hac',  logo: '/assets/img/partners/hac.png',     url: 'https://astronomy.az/' },
+  { key: 'tusi', logo: '/assets/img/partners/tusi.png',    url: 'https://planetarium.az/' },
+  { key: 'ns',   logo: '/assets/img/partners/ns.png',      url: 'https://nagiyev.com/' },
+  { key: 'log',  logo: '/assets/img/partners/logitaka.png', url: 'https://logitaka.com/' },
 ];
 
 const Partners = () => {
@@ -17,10 +16,9 @@ const Partners = () => {
       <p className="section-sub section-sub--center">{t('partners.sub')}</p>
       <div className="partners-grid">
         {partners.map(p => (
-          <a className="glass partner-card" href="#" key={p.name} onClick={e => e.preventDefault()}>
-            <span className="partner-badge"><Image size={22} /></span>
-            <strong>{p.name}</strong>
-            <small>{t(`partners.${p.t}`)}</small>
+          <a className="partner-card" href={p.url} key={p.key} target="_blank" rel="noopener noreferrer">
+            <img className="partner-logo" src={p.logo} alt={t(`partners.${p.key}`)} />
+            <strong>{t(`partners.${p.key}`)}</strong>
           </a>
         ))}
       </div>

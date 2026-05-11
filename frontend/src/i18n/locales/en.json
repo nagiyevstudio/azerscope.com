@@ -133,13 +133,12 @@
   },
   "partners": {
     "label": "Partners",
-    "title": "Partner block ready for <span>real logos</span>",
-    "sub": "Placeholders now. Replace with official logos, names, and links before publication.",
-    "logo": "Logo",
-    "type1": "Community / Organization",
-    "type2": "University / Club",
-    "type3": "Media / Sponsor",
-    "type4": "Observatory / Research"
+    "title": "Seeing further <span>together</span>",
+    "sub": "Our partners who support the development of AzerScope.",
+    "hac": "Amateur Astronomers Society",
+    "tusi": "Tusi-Bohm Planetarium",
+    "ns": "Nagiyev Studio",
+    "log": "Logitaka"
   },
   "faq": {
     "label": "FAQ",

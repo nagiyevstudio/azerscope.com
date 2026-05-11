@@ -163,13 +163,12 @@
   },
   "partners": {
     "label": "Tərəfdaşlar",
-    "title": "Logolar üçün <span>tərəfdaş bloku</span>",
-    "sub": "Hazırda yer tutuculardır. Rəsmi logolar və linklərlə əvəz olunacaq.",
-    "logo": "Logo",
-    "type1": "İcma / Təşkilat",
-    "type2": "Universitet / Klub",
-    "type3": "Media / Sponsor",
-    "type4": "Rəsədxana / Araşdırma"
+    "title": "Birlikdə <span>daha uzağa</span> baxırıq",
+    "sub": "AzerScope-un inkişafına dəstək olan tərəfdaşlarımız.",
+    "hac": "Həvəskar Astronomlar Cəmiyyəti",
+    "tusi": "Tusi-Bohm Planetariumu",
+    "ns": "Nagiyev Studio",
+    "log": "Logitaka"
   },
   "faq": {
     "label": "Sual-Cavab",
