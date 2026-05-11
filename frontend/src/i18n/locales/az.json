@@ -15,12 +15,12 @@
     "kicker": "Precision in Darkness.",
     "title": "Gecə səmasını <span class=\"gold\">əminliklə</span> planlaşdırın.",
     "subtitle": "AzerScope astronomiya həvəskarlarına hava şəraiti, səmanın görünməsi, alətlər, tədbirlər və qeydlər vasitəsilə müşahidələri planlaşdırmağa kömək edir.",
-    "ctaPrimary": "Tezliklə Yüklə",
+    "ctaPrimary": "Yüklə",
     "ctaSecondary": "Telegram Beta-ya qoşul",
     "store1s": "Yüklə",
-    "store1": "App Store (Tezliklə)",
+    "store1": "App Store",
     "store2s": "Yüklə",
-    "store2": "Google Play (Tezliklə)",
+    "store2": "Google Play",
     "note": "Bu saytda abunə satılmır. Alış  və bərpa əməliyyatları mobil tətbiq daxilində (mağaza qaydalarına uyğun) həyata keçirilir.",
     "guestLabel": "Qonaq rejimi mövcuddur",
     "guest1": "Ana səhifə",
@@ -187,8 +187,8 @@
   "cta": {
     "label": "Beta Giriş",
     "title": "Səmanı daha yaxşı izləyin. <span>AzerScope beta-ya qoşulun.</span>",
-    "sub": "Mağaza linkləri rəsmi buraxılışa qədər gizli qalacaq. Telegram əsas ünsiyyət kanalıdır.",
-    "dl": "Tezliklə Yüklə",
+    "sub": "AzerScope icmasına qoşulun və ən son yenilikləri izləyin.",
+    "dl": "Yüklə",
     "tg": "Telegram Beta-nı aç"
   },
   "footer": {
@@ -206,7 +206,7 @@
     "faq": "Mual-Cavab",
     "privacy": "Məxfilik Siyasəti",
     "terms": "İstifadə Şərtləri",
-    "store": "Mağaza Linkləri (Tezliklə)",
+    "store": "Mağaza Linkləri",
     "copy": "© 2026 AzerScope. Beta səhifəsi."
   }
 }

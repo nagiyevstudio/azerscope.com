@@ -15,12 +15,12 @@
     "kicker": "Precision in Darkness.",
     "title": "Plan the <span class=\"gold\">night sky</span> with confidence.",
     "subtitle": "AzerScope helps astronomy enthusiasts plan observations with weather context, sky visibility, tools, events, and logs.",
-    "ctaPrimary": "Download (Soon)",
+    "ctaPrimary": "Download",
     "ctaSecondary": "Join Telegram Beta",
     "store1s": "Download on",
-    "store1": "App Store (Soon)",
+    "store1": "App Store",
     "store2s": "Get it on",
-    "store2": "Google Play (Soon)",
+    "store2": "Google Play",
     "note": "This website does not sell subscriptions. Purchase and restore are handled inside the mobile app (store policy).",
     "guestLabel": "Guest mode available",
     "guest1": "Home",
@@ -156,8 +156,8 @@
   "cta": {
     "label": "Beta Access",
     "title": "Track the sky better tonight. <span>Join AzerScope beta.</span>",
-    "sub": "Store links stay hidden until release. Telegram is the active beta communication channel.",
-    "dl": "Download (Soon)",
+    "sub": "Join the AzerScope community and follow the latest updates.",
+    "dl": "Download",
     "tg": "Open Telegram Beta"
   },
   "footer": {
@@ -175,7 +175,7 @@
     "faq": "FAQ",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "store": "Store Links (Soon)",
+    "store": "Store Links",
     "copy": "© 2026 AzerScope. Beta landing page."
   }
 }

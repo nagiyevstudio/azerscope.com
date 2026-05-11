@@ -15,16 +15,15 @@ const Hero = () => {
           </div>
           <p className="hero-sub">{t('hero.subtitle')}</p>
           <div className="hero-btns">
-            <a className="btn-primary" href="#download">{t('hero.ctaPrimary')}</a>
             <a className="btn-secondary" href="https://t.me/azerscope" target="_blank" rel="noreferrer">
               {t('hero.ctaSecondary')}
             </a>
           </div>
           <div className="store-badges" id="download">
-            <a className="store-badge" href="#" aria-disabled="true">
+            <a className="store-badge" href="https://apps.apple.com/az/app/azerscope/id6758908053" target="_blank" rel="noreferrer">
               <img src="/assets/img/app-store.png" alt="App Store" />
             </a>
-            <a className="store-badge" href="#" aria-disabled="true">
+            <a className="store-badge" href="https://play.google.com/store/apps/details?id=com.alterace.azerscope" target="_blank" rel="noreferrer">
               <img src="/assets/img/google-play.png" alt="Google Play" />
             </a>
           </div>

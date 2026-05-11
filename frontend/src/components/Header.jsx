@@ -73,7 +73,7 @@ const Header = () => {
             <span>Telegram</span>
           </a>
 
-          <a className="btn-nav-cta" href="#download">{t('nav.download')}</a>
+
         </div>
 
         {/* Burger */}
@@ -108,9 +108,7 @@ const Header = () => {
               </button>
             ))}
           </div>
-          <a className="btn-nav-cta" href="#download" onClick={() => setIsOpen(false)}>
-            {t('nav.download')}
-          </a>
+
         </div>
       </div>
     </header>
