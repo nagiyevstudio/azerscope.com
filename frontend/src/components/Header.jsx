@@ -1,20 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Menu, X, Send } from 'lucide-react';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setIsOpen(false);
   };
-
-  useEffect(() => { setIsOpen(false); }, [location]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -34,7 +31,7 @@ const Header = () => {
     <header className={`c-nav ${scrolled ? 'nav-scrolled' : ''} ${isOpen ? 'nav-open' : ''}`}>
       <div className="nav-inner page-wrap">
         {/* Logo */}
-        <Link to="/" className="nav-logo" aria-label="AzerScope home">
+        <Link to="/" className="nav-logo" aria-label="AzerScope home" onClick={() => setIsOpen(false)}>
           <img src="/assets/img/logo.png" alt="AzerScope" />
         </Link>
 
