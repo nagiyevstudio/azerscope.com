@@ -4,7 +4,6 @@
     "features": "Features",
     "tools": "Tools",
     "trust": "Data & Trust",
-    "faq": "FAQ",
     "beta": "Telegram Beta",
     "download": "Download"
   },
@@ -140,23 +139,6 @@
     "ns": "Nagiyev Studio",
     "log": "Logitaka"
   },
-  "faq": {
-    "label": "FAQ",
-    "title": "Before you join the <span>beta</span>",
-    "sub": "Purchase flow, access rules, and beta expectations.",
-    "q1": "Why can’t I buy on the website?",
-    "a1": "The website is informational only. Subscription purchase, renewals, and restores are handled inside the app.",
-    "q2": "Is there a free version?",
-    "a2": "No free plan. AzerScope offers a limited guest mode (Home, Weather, Sky).",
-    "q3": "What does beta mean here?",
-    "a3": "The app is usable but evolving. Bugs, unfinished areas, and placeholder content may appear.",
-    "q4": "Will store totals match site prices?",
-    "a4": "Store checkout totals may vary by taxes, currency conversion, and regional rules.",
-    "q5": "Who gets special access plans?",
-    "a5": "HAC members, BSU astronomy club members, selected volunteers, and invited guests depending on program criteria.",
-    "q6": "Where do I follow beta updates?",
-    "a6": "Use the Telegram channel for beta announcements, testing updates, and release notes."
-  },
   "cta": {
     "label": "Beta Access",
     "title": "Track the sky better tonight. <span>Join AzerScope beta.</span>",
@@ -176,7 +158,6 @@
     "trust": "Data & Trust",
     "partners": "Partners",
     "beta": "Beta Channel",
-    "faq": "FAQ",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "store": "Store Links",

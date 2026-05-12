@@ -4,7 +4,6 @@
     "features": "Özəlliklər",
     "tools": "Alətlər",
     "trust": "Məlumat və Etibar",
-    "faq": "Sual-Cavab",
     "beta": "Telegram Beta",
     "download": "Yüklə"
   },
@@ -170,23 +169,6 @@
     "ns": "Nagiyev Studio",
     "log": "Logitaka"
   },
-  "faq": {
-    "label": "Sual-Cavab",
-    "title": "Beta-ya qoşulmazdan <span>əvvəl</span>",
-    "sub": "Satınalma, giriş qaydaları və beta gözləntiləri.",
-    "q1": "Niyə saytda abunə ala bilmirəm?",
-    "a1": "Sayt yalnız məlumat xarakterlidir. Abunəlik, yeniləmə və bərpa yalnız tətbiq daxilində mümkündür.",
-    "q2": "Pulsuz versiya varmı?",
-    "a2": "Xeyr. AzerScope yalnız məhdud qonaq rejimi təklif edir (Ana səhifə, Hava, Səma).",
-    "q3": "Beta nə deməkdir?",
-    "a3": "Tətbiq işləkdir, lakin inkişaf edir. Xətalar və tamamlanmamış bölmələr ola bilər.",
-    "q4": "Mağazadakı qiymət saytla eyni olacaq?",
-    "a4": "Mağaza qiymətləri vergilər və regional valyuta qaydalarına görə fərqlənə bilər.",
-    "q5": "Xüsusi giriş planlarını kimlər alır?",
-    "a5": "HAC üzvləri, BDU astronomiya klubu üzvləri, seçilmiş könüllülər və dəvət olunmuş qonaqlar.",
-    "q6": "Beta yeniliklərini haradan izləyim?",
-    "a6": "Elanlar, sınaq yeniləmələri və qeydlər üçün Telegram kanalımızı izləyin."
-  },
   "cta": {
     "label": "Beta Giriş",
     "title": "Səmanı daha yaxşı izləyin. <span>AzerScope beta-ya qoşulun.</span>",
@@ -206,7 +188,6 @@
     "trust": "Məlumat və Etibar",
     "partners": "Tərəfdaşlar",
     "beta": "Beta Kanalı",
-    "faq": "Mual-Cavab",
     "privacy": "Məxfilik Siyasəti",
     "terms": "İstifadə Şərtləri",
     "store": "Mağaza Linkləri",

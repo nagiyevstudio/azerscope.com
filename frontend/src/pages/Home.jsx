@@ -6,7 +6,6 @@ import Tools from '../components/sections/Tools';
 import Access from '../components/sections/Access';
 import Trust from '../components/sections/Trust';
 import Partners from '../components/sections/Partners';
-import FAQ from '../components/sections/FAQ';
 import CTA from '../components/sections/CTA';
 
 const Home = () => (
@@ -19,7 +18,6 @@ const Home = () => (
     <Access />
     <Trust />
     <Partners />
-    <FAQ />
     <CTA />
   </div>
 );

@@ -26,7 +26,6 @@ const Header = () => {
     { href: '#features', key: 'nav.features' },
     { href: '#tools',    key: 'nav.tools'    },
     { href: '#trust',    key: 'nav.trust'    },
-    { href: '#faq',      key: 'nav.faq'      },
   ];
 
   const langs = ['AZ', 'RU', 'EN'];

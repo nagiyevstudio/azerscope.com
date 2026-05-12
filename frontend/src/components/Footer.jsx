@@ -35,7 +35,6 @@ const Footer = () => {
             <li><a href="#trust">{t('footer.trust')}</a></li>
             <li><a href="#partners">{t('footer.partners')}</a></li>
             <li><a href="https://t.me/azerscope" target="_blank" rel="noreferrer">{t('footer.beta')}</a></li>
-            <li><a href="#faq">{t('footer.faq')}</a></li>
           </ul>
         </div>
         

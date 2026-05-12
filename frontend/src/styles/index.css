@@ -385,21 +385,6 @@ img { display:block; max-width:100%; }
 .partner-card strong { font-size:13px; font-weight:600; color:var(--muted); text-align:center; transition:color .22s; }
 .partner-card:hover strong { color:var(--white); }
 
-/* ─── FAQ ────────────────────────────────────────── */
-.c-faq { max-width:740px; margin:0 auto; }
-.faq-item { border-bottom:1px solid var(--glass-border); }
-.faq-q {
-  width:100%; display:flex; justify-content:space-between; align-items:center;
-  padding:22px 0; background:none; border:none;
-  color:var(--white); font-size:16px; font-weight:600;
-  font-family:inherit; text-align:left; cursor:pointer; gap:16px;
-  transition:color .18s;
-}
-.faq-q:hover { color:var(--gold); }
-.faq-a { overflow:hidden; max-height:0; transition:max-height .3s ease; }
-.faq-a p { font-size:14px; color:var(--muted); padding-bottom:22px; line-height:1.7; }
-.faq-item.active .faq-a { max-height:400px; }
-
 /* ─── CTA ────────────────────────────────────────── */
 .cta-box {
   position:relative; overflow:hidden;
