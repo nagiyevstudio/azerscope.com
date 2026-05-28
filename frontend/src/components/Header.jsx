@@ -66,7 +66,6 @@ const Header = () => {
             aria-label="Telegram Beta"
           >
             <Send size={15} />
-            <span>Telegram</span>
           </a>
 
 
