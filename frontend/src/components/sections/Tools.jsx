@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Search, Scan, Replace, SlidersHorizontal, Timer, Compass, Aperture, Wrench } from 'lucide-react';
+import { Search, Scan, Replace, SlidersHorizontal, Timer, Compass, Aperture } from 'lucide-react';
 
 const toolsList = [
   { k:'t1', icon:<Search size={18}/> },
