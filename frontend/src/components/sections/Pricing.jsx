@@ -31,7 +31,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="page-wrap">
+    <section id="pricing" className="section page-wrap">
       <div className="section-label">{t('pricing.label')}</div>
       <h2 className="section-title" dangerouslySetInnerHTML={{ __html: t('pricing.title') }}></h2>
       <p className="section-sub">{t('pricing.sub')}</p>
