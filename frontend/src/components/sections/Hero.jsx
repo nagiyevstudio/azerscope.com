@@ -16,11 +16,11 @@ const Hero = () => {
             </div>
             <p className="hero-sub">{t('hero.subtitle')}</p>
             <div className="store-badges" id="download">
-              <a className="store-btn-css" href="https://apps.apple.com/us/app/azerscope/id6758908053" target="_blank" rel="noreferrer">
-                <img src="/assets/img/stores/app-store.svg" alt="App Store" />
+              <a className="store-badge" href="https://apps.apple.com/us/app/azerscope/id6758908053" target="_blank" rel="noreferrer">
+                <img src="/assets/img/app-store.png" alt="Download on the App Store" />
               </a>
-              <a className="store-btn-css" href="https://play.google.com/store/apps/details?id=com.alterace.azerscope" target="_blank" rel="noreferrer">
-                <img src="/assets/img/stores/google-store.svg" alt="Google Play" />
+              <a className="store-badge" href="https://play.google.com/store/apps/details?id=com.alterace.azerscope" target="_blank" rel="noreferrer">
+                <img src="/assets/img/google-play.png" alt="Get it on Google Play" />
               </a>
             </div>
           </div>
