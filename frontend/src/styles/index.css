@@ -249,6 +249,12 @@
    margin-inline: auto;
  }
 
+ .section-label.section-title--center {
+   display: block;
+   width: max-content;
+   margin-inline: auto;
+ }
+
  .section-sub {
    font-size: clamp(14px, 1.4vw, 16px);
    color: var(--muted);
@@ -1341,7 +1347,13 @@
      display: none;
    }
 
-   .section-label,
+   .section-label {
+     display: block;
+     width: max-content;
+     text-align: center;
+     margin-inline: auto;
+   }
+
    .section-title,
    .section-sub {
      text-align: center;
