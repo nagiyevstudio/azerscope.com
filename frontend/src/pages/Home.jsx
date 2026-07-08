@@ -1,5 +1,6 @@
 import Hero from '../components/sections/Hero';
 import Overview from '../components/sections/Overview';
+import Forecast from '../components/sections/Forecast';
 import Features from '../components/sections/Features';
 import Screens from '../components/sections/Screens';
 import Tools from '../components/sections/Tools';
@@ -12,6 +13,7 @@ const Home = () => (
   <div className="home-page">
     <Hero />
     <Overview />
+    <Forecast />
     <Features />
     <Screens />
     <Tools />
