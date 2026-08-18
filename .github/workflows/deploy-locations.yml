@@ -1,0 +1,51 @@
+name: Deploy Locations
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "locations/**"
+      - ".github/workflows/deploy-locations.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: locations-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: locations
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Astro project
+        run: npm run build
+
+      - name: Validate public JSON contract v1
+        run: npm run validate:json
+
+      - name: Deploy dist to /locations via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./locations/dist/
+          server-dir: ./locations/

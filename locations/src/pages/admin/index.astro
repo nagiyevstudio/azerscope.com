@@ -1,0 +1,23 @@
+---
+import "../../styles/global.css";
+import AdminApp from "../../components/admin/AdminApp";
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Локации — локальная админка (dev)</title>
+  </head>
+  <body>
+    <!--
+      Локальная dev-админка: существует только на dev-сервере (npm run dev).
+      API-endpoints в продакшен-сборке отдают 404, поэтому даже случайно
+      попав в прод, страница не позволяет ничего изменить.
+      client:only — компонент не рендерится на сервере (Leaflet требует DOM).
+    -->
+    <AdminApp client:only="react" />
+  </body>
+</html>

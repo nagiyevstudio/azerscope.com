@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { LANGS, isLang, type Lang } from "../../config";
+import {
+  getVisibleLocations,
+  locationPath,
+  catalogPath,
+  absoluteUrl,
+  coverPath,
+  imageUrl,
+  directionsUrl,
+} from "../../lib/locations";
+import { bodyKeyFor } from "../../lib/schema";
+import { renderMarkdown } from "../../lib/markdown";
+import { formatDate, t } from "../../lib/i18n";
+
+export async function getStaticPaths() {
+  const locations = await getVisibleLocations();
+  return LANGS.flatMap((lang) =>
+    locations.map((location) => ({
+      params: { lang, slug: location.data.slug },
+      props: { location },
+    }))
+  );
+}
+
+const langParam = Astro.params.lang;
+if (!isLang(langParam)) {
+  return Astro.redirect(catalogPath("en"));
+}
+const lang: Lang = langParam;
+
+const { location } = Astro.props;
+const data = location.data;
+const isArchived = data.status === "archived";
+
+const articleHtml = renderMarkdown(data[bodyKeyFor(lang)]);
+const cover = coverPath(data);
+const alt = data.cover.alt[lang] || data.name[lang];
+const coords = `${data.latitude.toFixed(5)}, ${data.longitude.toFixed(5)}`;
+const alternates = LANGS.map((l) => ({
+  lang: l,
+  href: absoluteUrl(locationPath(l, data.slug)),
+}));
+const title = `${data.name[lang]} — ${t(lang, "catalogTitle")}`;
+---
+
+<BaseLayout
+  lang={lang}
+  title={title}
+  description={data.summary[lang]}
+  canonical={absoluteUrl(locationPath(lang, data.slug))}
+  alternates={alternates}
+  ogImage={imageUrl(data) || undefined}
+>
+  <article class="mx-auto max-w-4xl px-4 pb-20 pt-10 sm:px-6">
+    <a href={catalogPath(lang)} class="text-sm text-mist-400 transition-colors hover:text-gold-400">
+      ← {t(lang, "backToCatalog")}
+    </a>
+
+    {
+      isArchived && (
+        <div class="mt-6 rounded-2xl border border-amber-400/30 bg-amber-400/10 p-5">
+          <p class="font-semibold text-amber-300">{t(lang, "archivedTitle")}</p>
+          <p class="mt-1 text-sm text-amber-200/80">{t(lang, "archivedBody")}</p>
+        </div>
+      )
+    }
+
+    <header class="mt-8">
+      <h1 class="text-3xl font-bold leading-tight text-white sm:text-4xl">{data.name[lang]}</h1>
+      <p class="mt-2 text-lg text-gold-400">{data.region[lang]}</p>
+    </header>
+
+    {
+      cover && (
+        <figure class="mt-8">
+          <img
+            src={cover}
+            alt={alt}
+            class="w-full rounded-2xl border border-white/10 object-cover"
+          />
+          {data.cover.credit && (
+            <figcaption class="mt-2 text-xs text-mist-600">© {data.cover.credit}</figcaption>
+          )}
+        </figure>
+      )
+    }
+
+    <div class="card-surface mt-8 grid grid-cols-1 gap-4 p-6 sm:grid-cols-2">
+      <div>
+        <p class="text-xs uppercase tracking-wider text-mist-600">{t(lang, "bortle")}</p>
+        <p class="mt-1 text-2xl font-semibold text-white">{data.bortle}<span class="text-mist-600"> / 9</span></p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-wider text-mist-600">{t(lang, "coordinates")}</p>
+        <p class="mt-1 font-mono text-lg text-white">{coords}</p>
+      </div>
+      <div class="sm:col-span-2">
+        <a
+          href={directionsUrl(data.latitude, data.longitude)}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold text-space-950 transition-colors hover:bg-gold-300"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          {t(lang, "directions")}
+        </a>
+      </div>
+    </div>
+
+    <div class="article mt-10" set:html={articleHtml} />
+
+    <footer class="mt-12 border-t border-white/5 pt-6 text-sm text-mist-600">
+      {data.updatedAt && <p>{t(lang, "updatedAt")}: {formatDate(data.updatedAt, lang)}</p>}
+    </footer>
+  </article>
+</BaseLayout>

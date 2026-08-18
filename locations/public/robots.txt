@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azerscope.com/locations/sitemap-index.xml

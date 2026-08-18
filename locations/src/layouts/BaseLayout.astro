@@ -1,0 +1,98 @@
+---
+import "../styles/global.css";
+import { BASE, SITE, type Lang } from "../config";
+import { LANG_LABELS } from "../lib/i18n";
+
+interface Alternate {
+  lang: Lang;
+  href: string;
+}
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  canonical: string;
+  alternates: Alternate[];
+  ogImage?: string;
+}
+
+const { lang, title, description, canonical, alternates, ogImage } = Astro.props;
+const xDefault = alternates.find((a) => a.lang === "en") ?? alternates[0];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={`${BASE}/favicon.svg`} />
+    <link rel="canonical" href={canonical} />
+    {alternates.map((alt) => (
+      <link rel="alternate" hreflang={alt.lang} href={alt.href} />
+    ))}
+    {xDefault && <link rel="alternate" hreflang="x-default" href={xDefault.href} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AzerScope" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+  </head>
+  <body>
+    <div class="cosmic-bg" aria-hidden="true">
+      <div class="cosmic-orb cosmic-orb--1"></div>
+      <div class="cosmic-orb cosmic-orb--2"></div>
+      <div class="cosmic-orb cosmic-orb--3"></div>
+    </div>
+
+    <div class="content-layer flex min-h-screen flex-col">
+      <header class="border-b border-white/5">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+          <a href={`${BASE}/${lang}/`} class="flex items-center gap-3">
+            <img src={`${BASE}/favicon.svg`} alt="" width="34" height="34" />
+            <span class="text-sm font-semibold tracking-wide text-white sm:text-base">
+              AzerScope
+              <span class="text-mist-400 font-normal"> · Locations</span>
+            </span>
+          </a>
+          <nav class="flex items-center gap-1" aria-label="Language">
+            {(["az", "ru", "en"] as Lang[]).map((l) => {
+              const alt = alternates.find((a) => a.lang === l);
+              if (!alt) return null;
+              const active = l === lang;
+              return (
+                <a
+                  href={alt.href}
+                  aria-current={active ? "page" : undefined}
+                  class:list={[
+                    "rounded-full px-3 py-1.5 text-xs font-semibold transition-colors",
+                    active
+                      ? "bg-gold-400/10 text-gold-400 border border-gold-400/25"
+                      : "text-mist-400 hover:text-white border border-transparent",
+                  ]}
+                >
+                  {LANG_LABELS[l]}
+                </a>
+              );
+            })}
+          </nav>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <slot />
+      </main>
+
+      <footer class="border-t border-white/5 py-6">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 text-xs text-mist-600 sm:flex-row sm:px-6">
+          <span>© {new Date().getFullYear()} AzerScope</span>
+          <a href={SITE} class="hover:text-mist-400 transition-colors">azerscope.com</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

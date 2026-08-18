@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-14T12:00:00Z",
+  "locations": [
+    {
+      "id": "pirqulu",
+      "order": 10,
+      "name": {
+        "az": "Pirqulu",
+        "ru": "Пиркули",
+        "en": "Pirqulu"
+      },
+      "region": {
+        "az": "Şamaxı",
+        "ru": "Шемахинский район",
+        "en": "Shamakhi"
+      },
+      "summary": {
+        "az": "Qaranlıq səma və açıq üfüqü olan müşahidə məkanı.",
+        "ru": "Место для наблюдений с тёмным небом и открытым горизонтом.",
+        "en": "An observing location with dark skies and an open horizon."
+      },
+      "latitude": 40.788,
+      "longitude": 48.596,
+      "matchRadiusKm": 2,
+      "bortle": 3,
+      "imageUrl": "https://azerscope.com/locations/images/locations/pirqulu/cover.jpg",
+      "detailsUrl": "https://azerscope.com/locations/en/pirqulu/"
+    }
+  ]
+}

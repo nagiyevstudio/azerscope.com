@@ -1,0 +1,194 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Палитра повторяет основной сайт azerscope.com (frontend/src/styles/index.css). */
+@theme {
+  --color-space-950: #020710;
+  --color-space-900: #060d20;
+  --color-space-800: #0b1428;
+  --color-gold-300: #f9e2ae;
+  --color-gold-400: #f5d181;
+  --color-mist-200: #dbe2ef;
+  --color-mist-300: #c3ccdd;
+  --color-mist-400: #8e99b0;
+  --color-mist-600: #4e5d78;
+  --radius-card: 18px;
+  --radius-field: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-space-950);
+  color: #ffffff;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  min-height: 100vh;
+}
+
+/* ── Cosmic background ─────────────────────────────── */
+.cosmic-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cosmic-orb {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+  filter: blur(60px);
+  opacity: 0.6;
+}
+
+.cosmic-orb--1 {
+  width: 600px;
+  height: 600px;
+  top: -10%;
+  left: -8%;
+  background: radial-gradient(circle, rgba(30, 80, 180, 0.55) 0%, transparent 70%);
+  animation: cosmic-drift-1 50s ease-in-out infinite alternate;
+}
+
+.cosmic-orb--2 {
+  width: 700px;
+  height: 700px;
+  top: 30%;
+  right: -12%;
+  background: radial-gradient(circle, rgba(120, 40, 160, 0.45) 0%, transparent 70%);
+  animation: cosmic-drift-2 60s ease-in-out infinite alternate;
+}
+
+.cosmic-orb--3 {
+  width: 550px;
+  height: 550px;
+  bottom: -8%;
+  left: 25%;
+  background: radial-gradient(circle, rgba(20, 100, 140, 0.45) 0%, transparent 70%);
+  animation: cosmic-drift-3 45s ease-in-out infinite alternate;
+}
+
+@keyframes cosmic-drift-1 {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(80px, 60px) scale(1.1); }
+}
+@keyframes cosmic-drift-2 {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(-60px, 80px) scale(1.08); }
+}
+@keyframes cosmic-drift-3 {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(70px, -50px) scale(1.12); }
+}
+
+@media (max-width: 640px) {
+  .cosmic-orb--3 { display: none; }
+  .cosmic-orb--1 { width: 350px; height: 350px; }
+  .cosmic-orb--2 { width: 400px; height: 400px; }
+}
+
+.content-layer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Markdown-статья на странице локации ───────────── */
+.article {
+  color: var(--color-mist-200);
+  line-height: 1.75;
+  font-size: 1.0625rem;
+}
+
+.article > * + * {
+  margin-top: 1em;
+}
+
+.article h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2em;
+  letter-spacing: 0.01em;
+}
+
+.article h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.75em;
+}
+
+.article a {
+  color: var(--color-gold-400);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.article strong {
+  color: #ffffff;
+}
+
+.article ul,
+.article ol {
+  padding-left: 1.4em;
+}
+
+.article ul {
+  list-style: disc;
+}
+
+.article ol {
+  list-style: decimal;
+}
+
+.article li + li {
+  margin-top: 0.4em;
+}
+
+.article blockquote {
+  border-left: 3px solid var(--color-gold-400);
+  padding-left: 1em;
+  color: var(--color-mist-300);
+  font-style: italic;
+}
+
+.article img {
+  border-radius: var(--radius-field);
+  width: 100%;
+}
+
+.article code {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+/* ── Общие элементы ────────────────────────────────── */
+.card-surface {
+  background: var(--color-space-900);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+}
+
+.gold-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(245, 209, 129, 0.25);
+  background: rgba(245, 209, 129, 0.08);
+  color: var(--color-gold-400);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}

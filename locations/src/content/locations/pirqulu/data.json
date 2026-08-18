@@ -1,0 +1,35 @@
+{
+  "slug": "pirqulu",
+  "status": "draft",
+  "order": 10,
+  "latitude": 40.788,
+  "longitude": 48.596,
+  "matchRadiusKm": 2,
+  "bortle": 3,
+  "name": {
+    "az": "Pirqulu",
+    "ru": "Пиркули",
+    "en": "Pirqulu"
+  },
+  "region": {
+    "az": "Şamaxı",
+    "ru": "Шемахинский район",
+    "en": "Shamakhi"
+  },
+  "summary": {
+    "az": "Qaranlıq səma və açıq üfüqü olan müşahidə məkanı. (QARALAMA — mətni redaktə edin)",
+    "ru": "Место для наблюдений с тёмным небом и открытым горизонтом. (ЧЕРНОВИК — отредактируйте текст)",
+    "en": "An observing location with dark skies and an open horizon. (DRAFT — edit this text)"
+  },
+  "cover": {
+    "file": "",
+    "alt": {
+      "az": "",
+      "ru": "",
+      "en": ""
+    },
+    "credit": null
+  },
+  "publishedAt": null,
+  "updatedAt": "2026-08-15T00:00:00.000Z"
+}
