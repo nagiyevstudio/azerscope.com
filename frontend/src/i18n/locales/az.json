@@ -203,5 +203,15 @@
     "terms": "İstifadə Şərtləri",
     "store": "Mağaza Linkləri",
     "copy": "© 2026 AzerScope. Beta səhifəsi."
+  },
+  "ecosystem": {
+    "network": "AZERSCOPE NETWORK",
+    "app": "Tətbiq",
+    "locations": "Məkanlar",
+    "shop": "Mağaza",
+    "telegram": "Telegram Beta",
+    "appDesc": "Gecə səmasını planlaşdırma tətbiqi",
+    "locationsDesc": "Müşahidə məkanları və qaranlıq səma xəritələri",
+    "shopDesc": "Astronomiya avadanlıqları və hədiyyələr"
   }
 }

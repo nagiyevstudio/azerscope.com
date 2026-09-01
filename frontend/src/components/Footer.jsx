@@ -47,6 +47,9 @@ const Footer = () => {
     i18n.changeLanguage(lng);
   };
 
+  const currentLang = (i18n.language || 'az').toLowerCase().slice(0, 2);
+  const langPath = ['az', 'ru', 'en'].includes(currentLang) ? currentLang : 'az';
+
   return (
     <footer className="c-footer page-wrap">
       <div className="footer-grid">
@@ -58,21 +61,22 @@ const Footer = () => {
         </div>
         
         <div className="footer-col">
+          <h4>{t('ecosystem.network')}</h4>
+          <ul>
+            <li><Link to="/">{t('ecosystem.app')}</Link></li>
+            <li><a href={`/locations/${langPath}/`}>{t('ecosystem.locations')}</a></li>
+            <li><a href="https://shop.azerscope.com/" target="_blank" rel="noopener noreferrer">{t('ecosystem.shop')} ↗</a></li>
+            <li><a href="https://t.me/azerscope" target="_blank" rel="noopener noreferrer">{t('ecosystem.telegram')} ↗</a></li>
+          </ul>
+        </div>
+        
+        <div className="footer-col">
           <h4>{t('footer.product')}</h4>
           <ul>
             <li><a href="#features">{t('footer.features')}</a></li>
             <li><a href="#tools">{t('footer.tools')}</a></li>
             <li><a href="#pricing">{t('footer.plans')}</a></li>
             <li><a href="#access">{t('footer.access')}</a></li>
-          </ul>
-        </div>
-        
-        <div className="footer-col">
-          <h4>{t('footer.company')}</h4>
-          <ul>
-            <li><a href="#trust">{t('footer.trust')}</a></li>
-            <li><a href="#partners">{t('footer.partners')}</a></li>
-            <li><a href="https://t.me/azerscope" target="_blank" rel="noreferrer">{t('footer.beta')}</a></li>
           </ul>
         </div>
         

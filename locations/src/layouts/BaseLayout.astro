@@ -1,7 +1,8 @@
 ---
 import "../styles/global.css";
 import { BASE, SITE, type Lang } from "../config";
-import { LANG_LABELS } from "../lib/i18n";
+import { LANG_LABELS, t } from "../lib/i18n";
+import EcosystemBar from "../components/EcosystemBar.astro";
 
 export interface Alternate {
   lang: Lang;
@@ -51,8 +52,9 @@ const xDefault = alternates.find((a) => a.lang === "en") ?? alternates[0];
     </div>
 
     <div class="content-layer flex min-h-screen flex-col">
-      <header class="sticky top-0 z-50 border-b border-white/5 bg-space-950/80 backdrop-blur-md">
-        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+      <header class="sticky top-0 z-50 border-b border-white/5 bg-space-950/85 backdrop-blur-md">
+        <EcosystemBar lang={lang} current="locations" />
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6">
           <a href={`${BASE}/${lang}/`} class="flex items-center gap-3 transition-all duration-300 hover:drop-shadow-[0_0_12px_rgba(245,209,129,0.45)]">
             <img src={`${BASE}/logo.png`} alt="AzerScope" class="h-8 w-auto object-contain" />
             <span class="text-sm font-semibold tracking-wide text-white sm:text-base">
@@ -88,10 +90,23 @@ const xDefault = alternates.find((a) => a.lang === "en") ?? alternates[0];
         <slot />
       </main>
 
-      <footer class="border-t border-white/5 py-6">
-        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 text-xs text-mist-600 sm:flex-row sm:px-6">
-          <span>© {new Date().getFullYear()} AzerScope</span>
-          <a href={SITE} class="hover:text-gold-300 hover:drop-shadow-[0_0_8px_rgba(245,209,129,0.4)] transition-all duration-300">azerscope.com</a>
+      <footer class="border-t border-white/5 py-8">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 text-xs text-mist-400 sm:flex-row sm:px-6">
+          <div class="flex items-center gap-4">
+            <span>© {new Date().getFullYear()} AzerScope</span>
+            <span class="text-white/20">·</span>
+            <span>{t(lang, "footerNote")}</span>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <a href={`${SITE}/`} class="transition-colors hover:text-gold-300">{t(lang, "ecosystemApp")}</a>
+            <span class="text-white/20">·</span>
+            <a href={`${BASE}/${lang}/`} class="text-gold-400">{t(lang, "ecosystemLocations")}</a>
+            <span class="text-white/20">·</span>
+            <a href="https://shop.azerscope.com/" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-gold-300">{t(lang, "ecosystemShop")} ↗</a>
+            <span class="text-white/20">·</span>
+            <a href="https://t.me/azerscope" target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-gold-300">Telegram ↗</a>
+          </div>
         </div>
       </footer>
     </div>

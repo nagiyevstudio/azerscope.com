@@ -205,5 +205,15 @@
     "terms": "Условия использования",
     "store": "Ссылки на сторы",
     "copy": "© 2026 AzerScope. Beta landing page."
+  },
+  "ecosystem": {
+    "network": "AZERSCOPE NETWORK",
+    "app": "Приложение",
+    "locations": "Локации",
+    "shop": "Магазин",
+    "telegram": "Telegram Beta",
+    "appDesc": "Приложение для планирования ночных наблюдений",
+    "locationsDesc": "Места наблюдений и карты засветки",
+    "shopDesc": "Астрономическое оборудование и подарки"
   }
 }

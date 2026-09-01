@@ -15,6 +15,11 @@ type UiStrings = {
   backToCatalog: string;
   langName: string;
   footerNote: string;
+  ecosystemNetwork: string;
+  ecosystemApp: string;
+  ecosystemLocations: string;
+  ecosystemShop: string;
+  ecosystemTelegram: string;
 };
 
 export const UI_STRINGS: Record<Lang, UiStrings> = {
@@ -35,6 +40,11 @@ export const UI_STRINGS: Record<Lang, UiStrings> = {
     backToCatalog: "Kataloqa qayıt",
     langName: "Azərbaycanca",
     footerNote: "AzerScope — tövsiyə olunan müşahidə məkanları kataloqu",
+    ecosystemNetwork: "AZERSCOPE NETWORK",
+    ecosystemApp: "Tətbiq",
+    ecosystemLocations: "Məkanlar",
+    ecosystemShop: "Mağaza",
+    ecosystemTelegram: "Telegram Beta",
   },
   ru: {
     catalogTitle: "Рекомендованные места для наблюдений",
@@ -53,6 +63,11 @@ export const UI_STRINGS: Record<Lang, UiStrings> = {
     backToCatalog: "Назад к каталогу",
     langName: "Русский",
     footerNote: "AzerScope — каталог рекомендованных мест для наблюдений",
+    ecosystemNetwork: "AZERSCOPE NETWORK",
+    ecosystemApp: "Приложение",
+    ecosystemLocations: "Локации",
+    ecosystemShop: "Магазин",
+    ecosystemTelegram: "Telegram Beta",
   },
   en: {
     catalogTitle: "Recommended observation locations",
@@ -71,6 +86,11 @@ export const UI_STRINGS: Record<Lang, UiStrings> = {
     backToCatalog: "Back to catalog",
     langName: "English",
     footerNote: "AzerScope — recommended observation locations catalog",
+    ecosystemNetwork: "AZERSCOPE NETWORK",
+    ecosystemApp: "App",
+    ecosystemLocations: "Locations",
+    ecosystemShop: "Shop",
+    ecosystemTelegram: "Telegram Beta",
   },
 };
 

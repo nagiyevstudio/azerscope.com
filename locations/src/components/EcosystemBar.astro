@@ -1,0 +1,106 @@
+---
+import { BASE, SITE, type Lang } from "../config";
+import { t } from "../lib/i18n";
+
+interface Props {
+  lang: Lang;
+  current?: "app" | "locations" | "shop";
+}
+
+const { lang, current = "locations" } = Astro.props;
+
+const sites = [
+  {
+    id: "app",
+    name: t(lang, "ecosystemApp"),
+    url: `${SITE}/`,
+    isExternal: true,
+    icon: "smartphone",
+  },
+  {
+    id: "locations",
+    name: t(lang, "ecosystemLocations"),
+    url: `${BASE}/${lang}/`,
+    isExternal: false,
+    icon: "map-pin",
+  },
+  {
+    id: "shop",
+    name: t(lang, "ecosystemShop"),
+    url: "https://shop.azerscope.com/",
+    isExternal: true,
+    icon: "shopping-bag",
+  },
+];
+---
+
+<div class="border-b border-white/8 bg-[#000000] py-1.5 text-xs">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+    <div class="hidden items-center gap-1.5 sm:flex">
+      <span class="h-1.5 w-1.5 rounded-full bg-gold-400 shadow-[0_0_8px_rgba(245,209,129,0.7)]"></span>
+      <span class="text-[10px] font-bold tracking-widest text-gold-400 uppercase opacity-95">
+        {t(lang, "ecosystemNetwork")}
+      </span>
+    </div>
+
+    <nav class="flex items-center gap-1.5 overflow-x-auto py-0.5" aria-label="AzerScope Network">
+      {
+        sites.map((site) => {
+          const isActive = site.id === current;
+          return (
+            <a
+              href={site.url}
+              aria-current={isActive ? "page" : undefined}
+              class:list={[
+                "inline-flex items-center gap-1.5 rounded-md px-2 py-0.5 text-[11.5px] transition-colors duration-150 bg-transparent border-0",
+                isActive
+                  ? "text-gold-400 font-bold"
+                  : "text-mist-400 hover:text-white font-medium",
+              ]}
+              target={site.isExternal ? "_blank" : undefined}
+              rel={site.isExternal ? "noopener noreferrer" : undefined}
+            >
+              {site.icon === "smartphone" && (
+                <svg xmlns="http://www.w3.org/2000/svg" class:list={["h-3 w-3 shrink-0", isActive ? "text-gold-400 opacity-100" : "opacity-85"]} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                  <path d="M12 18h.01"/>
+                </svg>
+              )}
+              {site.icon === "map-pin" && (
+                <svg xmlns="http://www.w3.org/2000/svg" class:list={["h-3 w-3 shrink-0", isActive ? "text-gold-400 opacity-100" : "opacity-85"]} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              )}
+              {site.icon === "shopping-bag" && (
+                <svg xmlns="http://www.w3.org/2000/svg" class:list={["h-3 w-3 shrink-0", isActive ? "text-gold-400 opacity-100" : "opacity-85"]} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                  <path d="M3 6h18"/>
+                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+              )}
+              <span>{site.name}</span>
+              {isActive && <span class="h-1 w-1 rounded-full bg-gold-400 shadow-[0_0_6px_rgba(245,209,129,0.8)]" />}
+            </a>
+          );
+        })
+      }
+    </nav>
+
+    <div class="flex items-center">
+      <a
+        href="https://t.me/azerscope"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 rounded px-2 py-0.5 text-[11px] font-semibold text-mist-400 transition-colors hover:text-gold-400"
+        title="Telegram Beta"
+      >
+        <span class="hidden sm:inline">{t(lang, "ecosystemTelegram")}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-2.5 w-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 7h10v10"/>
+          <path d="M7 17 17 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

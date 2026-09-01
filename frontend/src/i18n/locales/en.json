@@ -173,5 +173,15 @@
     "terms": "Terms of Use",
     "store": "Store Links",
     "copy": "© 2026 AzerScope. Beta landing page."
+  },
+  "ecosystem": {
+    "network": "AZERSCOPE NETWORK",
+    "app": "App",
+    "locations": "Locations",
+    "shop": "Shop",
+    "telegram": "Telegram Beta",
+    "appDesc": "Night sky planning app",
+    "locationsDesc": "Dark-sky spots and light pollution maps",
+    "shopDesc": "Astronomy equipment and gifts"
   }
 }

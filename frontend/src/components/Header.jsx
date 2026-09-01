@@ -1,12 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Send } from 'lucide-react';
+import { Menu, X, Send, Smartphone, MapPin, ShoppingBag } from 'lucide-react';
+import EcosystemBar from './EcosystemBar';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const currentLang = (i18n.language || 'az').toLowerCase().slice(0, 2);
+  const langPath = ['az', 'ru', 'en'].includes(currentLang) ? currentLang : 'az';
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -25,10 +29,18 @@ const Header = () => {
     { href: '#trust',    key: 'nav.trust'    },
   ];
 
+  const ecosystemLinks = [
+    { id: 'app', name: t('ecosystem.app'), desc: t('ecosystem.appDesc'), url: '/', active: true, icon: Smartphone },
+    { id: 'locations', name: t('ecosystem.locations'), desc: t('ecosystem.locationsDesc'), url: `/locations/${langPath}/`, active: false, icon: MapPin },
+    { id: 'shop', name: t('ecosystem.shop'), desc: t('ecosystem.shopDesc'), url: 'https://shop.azerscope.com/', active: false, icon: ShoppingBag },
+  ];
+
   const langs = ['AZ', 'RU', 'EN'];
 
   return (
     <header className={`c-nav ${scrolled ? 'nav-scrolled' : ''} ${isOpen ? 'nav-open' : ''}`}>
+      <EcosystemBar current="app" />
+
       <div className="nav-inner page-wrap">
         {/* Logo */}
         <Link to="/" className="nav-logo" aria-label="AzerScope home" onClick={() => setIsOpen(false)}>
@@ -67,8 +79,6 @@ const Header = () => {
           >
             <Send size={15} />
           </a>
-
-
         </div>
 
         {/* Burger */}
@@ -84,6 +94,38 @@ const Header = () => {
 
       {/* Mobile drawer */}
       <div className={`nav-drawer ${isOpen ? 'open' : ''}`}>
+        <div className="drawer-ecosystem">
+          <div className="drawer-section-title">{t('ecosystem.network')}</div>
+          <div className="drawer-ecosystem-grid">
+            {ecosystemLinks.map(item => {
+              const Icon = item.icon;
+              return (
+                <a
+                  key={item.id}
+                  href={item.url}
+                  className={`drawer-ecosystem-card ${item.active ? 'active' : ''}`}
+                  onClick={() => setIsOpen(false)}
+                  target={item.url.startsWith('http') ? '_blank' : undefined}
+                  rel={item.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                >
+                  <div className="drawer-card-icon">
+                    <Icon size={16} />
+                  </div>
+                  <div className="drawer-card-info">
+                    <div className="drawer-card-name">
+                      {item.name}
+                      {item.active && <span className="drawer-active-badge">Cari</span>}
+                    </div>
+                    <div className="drawer-card-desc">{item.desc}</div>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="drawer-section-divider" />
+
         <nav className="drawer-links">
           {navLinks.map(l => (
             <a key={l.href} href={l.href} className="drawer-link" onClick={() => setIsOpen(false)}>
@@ -91,6 +133,7 @@ const Header = () => {
             </a>
           ))}
         </nav>
+
         <div className="drawer-bottom">
           <div className="lang-pill">
             {langs.map(lng => (
@@ -104,6 +147,16 @@ const Header = () => {
             ))}
           </div>
 
+          <a
+            className="btn-secondary"
+            style={{ padding: '8px 16px', fontSize: '13px' }}
+            href="https://t.me/azerscope"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Send size={14} />
+            <span>{t('ecosystem.telegram')}</span>
+          </a>
         </div>
       </div>
     </header>
@@ -111,3 +164,4 @@ const Header = () => {
 };
 
 export default Header;
+
