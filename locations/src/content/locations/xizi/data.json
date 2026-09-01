@@ -1,0 +1,35 @@
+{
+  "slug": "xizi",
+  "status": "published",
+  "order": 40,
+  "latitude": 40.87312,
+  "longitude": 49.17764,
+  "matchRadiusKm": 3,
+  "bortle": 4.0,
+  "name": {
+    "az": "Xızı",
+    "ru": "Хызы",
+    "en": "Khizi"
+  },
+  "region": {
+    "az": "Xızı rayonu",
+    "ru": "Хызинский район",
+    "en": "Khizi District"
+  },
+  "summary": {
+    "az": "Bakıdan 85 km məsafədə, Xızının relyefli təpəliklərində yerləşən rahat müşahidə məkanı: Perseid meteor yağışları və gecə mənzərə çəkilişləri üçün əla şərait.",
+    "ru": "Живописная точка на холмах Хызы в 85 км от Баку: открытый обзор неба, умеренная засветка Bortle 4.0 и отличные условия для наблюдения метеоров и кемпинга.",
+    "en": "A scenic spot in the Khizi foothills 85 km from Baku: open sky views, Bortle 4.0 dark skies, ideal for Perseid meteor watching, astrocamping, and nightscapes."
+  },
+  "cover": {
+    "file": "cover.jpg",
+    "alt": {
+      "az": "Xızıda Perseidlər astrokampı və Süd Yolu",
+      "ru": "Астрокемпинг Персеиды и Млечный Путь в Хызы",
+      "en": "Perseids astrocamp and Milky Way at Khizi"
+    },
+    "credit": "Faik Nagiyev / Həvəskar Astronomlar Cəmiyyəti"
+  },
+  "publishedAt": "2026-09-01T15:45:00.000Z",
+  "updatedAt": "2026-09-01T15:45:00.000Z"
+}

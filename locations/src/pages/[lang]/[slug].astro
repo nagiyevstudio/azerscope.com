@@ -40,6 +40,7 @@ const alt = data.cover.alt[lang] || data.name[lang];
 const coords = `${data.latitude.toFixed(5)}, ${data.longitude.toFixed(5)}`;
 const alternates = LANGS.map((l) => ({
   lang: l,
+  path: locationPath(l, data.slug),
   href: absoluteUrl(locationPath(l, data.slug)),
 }));
 const title = `${data.name[lang]} — ${t(lang, "catalogTitle")}`;
@@ -54,7 +55,7 @@ const title = `${data.name[lang]} — ${t(lang, "catalogTitle")}`;
   ogImage={imageUrl(data) || undefined}
 >
   <article class="mx-auto max-w-4xl px-4 pb-20 pt-10 sm:px-6">
-    <a href={catalogPath(lang)} class="text-sm text-mist-400 transition-colors hover:text-gold-400">
+    <a href={catalogPath(lang)} class="inline-flex items-center text-sm text-mist-400 transition-all duration-300 hover:text-gold-300 hover:drop-shadow-[0_0_8px_rgba(245,209,129,0.5)]">
       ← {t(lang, "backToCatalog")}
     </a>
 
@@ -101,7 +102,7 @@ const title = `${data.name[lang]} — ${t(lang, "catalogTitle")}`;
           href={directionsUrl(data.latitude, data.longitude)}
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold text-space-950 transition-colors hover:bg-gold-300"
+          class="inline-flex items-center gap-2 rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold text-space-950 transition-all duration-300 hover:bg-gold-300 hover:shadow-[0_0_25px_rgba(245,209,129,0.45)]"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z" />

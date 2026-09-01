@@ -3,8 +3,9 @@ import "../styles/global.css";
 import { BASE, SITE, type Lang } from "../config";
 import { LANG_LABELS } from "../lib/i18n";
 
-interface Alternate {
+export interface Alternate {
   lang: Lang;
+  path: string;
   href: string;
 }
 
@@ -28,7 +29,7 @@ const xDefault = alternates.find((a) => a.lang === "en") ?? alternates[0];
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href={`${BASE}/favicon.svg`} />
+    <link rel="icon" type="image/png" href={`${BASE}/favicon.png`} />
     <link rel="canonical" href={canonical} />
     {alternates.map((alt) => (
       <link rel="alternate" hreflang={alt.lang} href={alt.href} />
@@ -52,8 +53,8 @@ const xDefault = alternates.find((a) => a.lang === "en") ?? alternates[0];
     <div class="content-layer flex min-h-screen flex-col">
       <header class="border-b border-white/5">
         <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-          <a href={`${BASE}/${lang}/`} class="flex items-center gap-3">
-            <img src={`${BASE}/favicon.svg`} alt="" width="34" height="34" />
+          <a href={`${BASE}/${lang}/`} class="flex items-center gap-3 transition-all duration-300 hover:drop-shadow-[0_0_12px_rgba(245,209,129,0.45)]">
+            <img src={`${BASE}/logo.png`} alt="AzerScope" class="h-8 w-auto object-contain" />
             <span class="text-sm font-semibold tracking-wide text-white sm:text-base">
               AzerScope
               <span class="text-mist-400 font-normal"> · Locations</span>
@@ -66,13 +67,13 @@ const xDefault = alternates.find((a) => a.lang === "en") ?? alternates[0];
               const active = l === lang;
               return (
                 <a
-                  href={alt.href}
+                  href={alt.path || alt.href}
                   aria-current={active ? "page" : undefined}
                   class:list={[
-                    "rounded-full px-3 py-1.5 text-xs font-semibold transition-colors",
+                    "rounded-full px-3 py-1.5 text-xs font-semibold transition-all duration-300",
                     active
-                      ? "bg-gold-400/10 text-gold-400 border border-gold-400/25"
-                      : "text-mist-400 hover:text-white border border-transparent",
+                      ? "bg-gold-400/10 text-gold-400 border border-gold-400/25 shadow-[0_0_12px_rgba(245,209,129,0.18)]"
+                      : "text-mist-400 hover:text-white hover:border-gold-400/30 hover:shadow-[0_0_12px_rgba(245,209,129,0.25)] border border-transparent",
                   ]}
                 >
                   {LANG_LABELS[l]}
@@ -90,7 +91,7 @@ const xDefault = alternates.find((a) => a.lang === "en") ?? alternates[0];
       <footer class="border-t border-white/5 py-6">
         <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 text-xs text-mist-600 sm:flex-row sm:px-6">
           <span>© {new Date().getFullYear()} AzerScope</span>
-          <a href={SITE} class="hover:text-mist-400 transition-colors">azerscope.com</a>
+          <a href={SITE} class="hover:text-gold-300 hover:drop-shadow-[0_0_8px_rgba(245,209,129,0.4)] transition-all duration-300">azerscope.com</a>
         </div>
       </footer>
     </div>

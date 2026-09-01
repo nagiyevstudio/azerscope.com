@@ -13,7 +13,7 @@ export default defineConfig({
   integrations: [react(), sitemap(), copyLocationCovers()],
   redirects: {
     // Язык по умолчанию для /locations/ — английский (константа DEFAULT_LANG).
-    "/": { status: 301, destination: "/en/" },
+    "/": { status: 301, destination: "/locations/en/" },
   },
   vite: {
     plugins: [tailwindcss()],

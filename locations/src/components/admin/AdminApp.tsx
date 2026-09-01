@@ -3,9 +3,9 @@ import { marked } from "marked";
 import MapPicker from "./MapPicker";
 
 const BASE = import.meta.env.BASE_URL; // "/locations/"
-const API_LIST = `${BASE}_admin/api/list`;
-const API_LOAD = `${BASE}_admin/api/load`;
-const API_SAVE = `${BASE}_admin/api/save`;
+const API_LIST = `${BASE}admin/api/list`;
+const API_LOAD = `${BASE}admin/api/load`;
+const API_SAVE = `${BASE}admin/api/save`;
 
 const LANG_TABS = ["az", "ru", "en"] as const;
 type LangTab = (typeof LANG_TABS)[number];
@@ -363,7 +363,7 @@ export default function AdminApp() {
         </div>
         <button
           onClick={resetNew}
-          className="rounded-full bg-gold-400 px-5 py-2.5 text-sm font-semibold text-space-950 transition-colors hover:bg-gold-300"
+          className="rounded-full bg-gold-400 px-5 py-2.5 text-sm font-semibold text-space-950 transition-all duration-300 hover:bg-gold-300 hover:shadow-[0_0_20px_rgba(245,209,129,0.35)]"
         >
           + Новая локация
         </button>
@@ -458,23 +458,26 @@ export default function AdminApp() {
             )}
             <div className="mt-4 flex flex-wrap gap-3">
               <button
+                type="button"
                 onClick={() => save("draft")}
                 disabled={saving}
-                className="rounded-full border border-white/15 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/5 disabled:opacity-50"
+                className="rounded-full border border-white/15 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white/30 hover:bg-white/5 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] disabled:opacity-50"
               >
                 Сохранить черновик
               </button>
               <button
+                type="button"
                 onClick={() => save("published")}
                 disabled={saving}
-                className="rounded-full bg-emerald-400 px-5 py-2.5 text-sm font-semibold text-space-950 transition-colors hover:bg-emerald-300 disabled:opacity-50"
+                className="rounded-full bg-emerald-400 px-5 py-2.5 text-sm font-semibold text-space-950 transition-all duration-300 hover:bg-emerald-300 hover:shadow-[0_0_20px_rgba(52,211,153,0.4)] disabled:opacity-50"
               >
                 Опубликовать
               </button>
               <button
+                type="button"
                 onClick={() => save("archived")}
                 disabled={saving}
-                className="rounded-full border border-amber-400/40 px-5 py-2.5 text-sm font-semibold text-amber-300 transition-colors hover:bg-amber-400/10 disabled:opacity-50"
+                className="rounded-full border border-amber-400/40 px-5 py-2.5 text-sm font-semibold text-amber-300 transition-all duration-300 hover:bg-amber-400/10 hover:shadow-[0_0_15px_rgba(251,191,36,0.3)] disabled:opacity-50"
               >
                 Архивировать
               </button>
@@ -626,16 +629,16 @@ export default function AdminApp() {
                 {err("longitude")}
               </div>
               <div>
-                <label className={labelCls}>Bortle (1–9)</label>
-                <select
+                <label className={labelCls}>Bortle (1.0–9.0)</label>
+                <input
+                  type="number"
+                  step="0.1"
+                  min="1"
+                  max="9"
                   className={inputCls}
                   value={form.bortle}
                   onChange={(e) => patch({ bortle: e.target.value })}
-                >
-                  {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((b) => (
-                    <option key={b} value={b}>{b}</option>
-                  ))}
-                </select>
+                />
                 {err("bortle")}
               </div>
               <div>

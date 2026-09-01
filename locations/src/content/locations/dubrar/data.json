@@ -1,0 +1,35 @@
+{
+  "slug": "dubrar",
+  "status": "published",
+  "order": 10,
+  "latitude": 40.89288,
+  "longitude": 48.83174,
+  "matchRadiusKm": 3,
+  "bortle": 3.7,
+  "name": {
+    "az": "Dübrar",
+    "ru": "Дюбрар",
+    "en": "Dubrar"
+  },
+  "region": {
+    "az": "Xızı rayonu",
+    "ru": "Хызинский район",
+    "en": "Khizi District"
+  },
+  "summary": {
+    "az": "Dəniz səviyyəsindən 2200 m yüksəklikdə yerləşən Dübrar dağı: açıq 360° üfüq, təmiz dağ havası və zəif işıq çirkliliyi ilə ideal astrokamp məkanı.",
+    "ru": "Гора Дюбрар на высоте 2200 м: открытый круговой горизонт 360°, прозрачный горный воздух и низкая засветка для астрономических наблюдений и кемпинга.",
+    "en": "Mount Dubrar at 2,200 m altitude: open 360° horizon, clear mountain air, and low light pollution for deep-sky observation and astrocamping."
+  },
+  "cover": {
+    "file": "cover.jpg",
+    "alt": {
+      "az": "Dübrar dağında astrokamp və gecə səması",
+      "ru": "Астрокемпинг и ночное небо на горе Дюбрар",
+      "en": "Astrocamp and starry night sky at Mount Dubrar"
+    },
+    "credit": "Faik Nagiyev / Həvəskar Astronomlar Cəmiyyəti"
+  },
+  "publishedAt": "2026-09-01T14:40:00.000Z",
+  "updatedAt": "2026-09-01T14:40:00.000Z"
+}

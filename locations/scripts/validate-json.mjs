@@ -86,8 +86,8 @@ doc.locations.forEach((loc, i) => {
   if (typeof loc.matchRadiusKm !== "number" || loc.matchRadiusKm <= 0) {
     fail(`${where}: matchRadiusKm должен быть положительным числом`);
   }
-  if (!Number.isInteger(loc.bortle) || loc.bortle < 1 || loc.bortle > 9) {
-    fail(`${where}: bortle должен быть целым 1–9`);
+  if (typeof loc.bortle !== "number" || loc.bortle < 1 || loc.bortle > 9) {
+    fail(`${where}: bortle должен быть числом 1–9`);
   }
 
   for (const field of ["imageUrl", "detailsUrl"]) {

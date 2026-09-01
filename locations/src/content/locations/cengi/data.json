@@ -1,0 +1,35 @@
+{
+  "slug": "cengi",
+  "status": "published",
+  "order": 20,
+  "latitude": 40.48368,
+  "longitude": 49.24413,
+  "matchRadiusKm": 3,
+  "bortle": 4.2,
+  "name": {
+    "az": "Cəngi",
+    "ru": "Дженги",
+    "en": "Jengi"
+  },
+  "region": {
+    "az": "Qobustan rayonu",
+    "ru": "Гобустанский район",
+    "en": "Gobustan District"
+  },
+  "summary": {
+    "az": "Bakıdan cəmi 60 km məsafədə, Cəngi çölündə yerləşən əlverişli müşahidə nöqtəsi: açıq üfüq və şəhər işıqlarından uzaq qısa astrosəfərlər üçün ideal məkan.",
+    "ru": "Удобная точка для быстрых выездов в 60 км от Баку: открытый степной горизонт и умеренная засветка в окрестностях поселка Дженги.",
+    "en": "A convenient observing spot just 60 km from Baku in the Jengi steppe: open horizon and moderate light pollution, ideal for quick stargazing trips."
+  },
+  "cover": {
+    "file": "cover.jpg",
+    "alt": {
+      "az": "Cəngi ərazisində astrokamp və Süd Yolu",
+      "ru": "Астрокемпинг и Млечный Путь в Дженги",
+      "en": "Astrocamp and the Milky Way at Jengi"
+    },
+    "credit": "Faik Nagiyev / Həvəskar Astronomlar Cəmiyyəti"
+  },
+  "publishedAt": "2026-09-01T15:25:00.000Z",
+  "updatedAt": "2026-09-01T15:25:00.000Z"
+}

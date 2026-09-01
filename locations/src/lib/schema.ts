@@ -42,7 +42,7 @@ export const locationDataSchema = z.object({
   latitude: z.number().min(-90).max(90),
   longitude: z.number().min(-180).max(180),
   matchRadiusKm: z.number().positive(),
-  bortle: z.number().int().min(1).max(9),
+  bortle: z.number().min(1).max(9),
   name: localizedStringSchema,
   region: localizedStringSchema,
   summary: localizedSummarySchema,

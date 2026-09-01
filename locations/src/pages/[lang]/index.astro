@@ -18,7 +18,11 @@ const lang: Lang = langParam;
 const locations = await getPublishedLocations();
 const title = t(lang, "catalogTitle");
 const description = t(lang, "catalogIntro");
-const alternates = LANGS.map((l) => ({ lang: l, href: absoluteUrl(catalogPath(l)) }));
+const alternates = LANGS.map((l) => ({
+  lang: l,
+  path: catalogPath(l),
+  href: absoluteUrl(catalogPath(l)),
+}));
 ---
 
 <BaseLayout

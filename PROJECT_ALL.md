@@ -1,0 +1,7 @@
+- Shared hosting API Backend: [https://api.azerscope.com](https://api.azerscope.com) (https://github.com/nagiyevstudio/api.azerscope.com.git)
+- front: expo, react native app iOs & Android: https://github.com/nagiyevstudio/astroapp.git
+- iOS: [‎Azerscope App - App Store](https://apps.apple.com/us/app/azerscope/id6758908053)
+- Android: https://play.google.com/store/apps/details?id=com.alterace.azerscope
+- Landing: [https://azerscope.com](https://azerscope.com) ([GitHub - nagiyevstudio/azerscope.com · GitHub](https://github.com/nagiyevstudio/azerscope.com.git))
+- Admin panel: [https://admin.azerscope.com](https://admin.azerscope.com) (https://github.com/nagiyevstudio/admin.azerscope.com.git)
+- PoketBase Backend: [https://space.azerscope.com](https://space.azerscope.com) (https://github.com/nagiyevstudio/space.azerscope.com.git)

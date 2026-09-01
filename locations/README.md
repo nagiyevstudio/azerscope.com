@@ -6,10 +6,10 @@
 
 ## Публичные URL
 
-| Что | URL |
-| --- | --- |
-| Каталог | `https://azerscope.com/locations/{az,ru,en}/` |
-| Страница локации | `https://azerscope.com/locations/{lang}/{slug}/` |
+| Что                    | URL                                                                         |
+| ---------------------- | --------------------------------------------------------------------------- |
+| Каталог                | `https://azerscope.com/locations/{az,ru,en}/`                               |
+| Страница локации       | `https://azerscope.com/locations/{lang}/{slug}/`                            |
 | JSON v1 для приложения | `https://azerscope.com/locations/recommended-observation-locations.v1.json` |
 
 `/locations/` без языка — 301 на `/locations/en/` (дефолт задаётся в

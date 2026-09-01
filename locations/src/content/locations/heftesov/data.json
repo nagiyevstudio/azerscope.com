@@ -1,0 +1,35 @@
+{
+  "slug": "heftesov",
+  "status": "published",
+  "order": 30,
+  "latitude": 40.89262,
+  "longitude": 48.40439,
+  "matchRadiusKm": 3,
+  "bortle": 3.7,
+  "name": {
+    "az": "Həftəsov",
+    "ru": "Хафтасов",
+    "en": "Haftasov"
+  },
+  "region": {
+    "az": "İsmayıllı rayonu",
+    "ru": "Исмаиллинский район",
+    "en": "Ismayilli District"
+  },
+  "summary": {
+    "az": "İsmayıllının Həftəsov kəndi yaxınlığındakı dağlıq yayla: təmiz kənd səması, Bortle 3.7 və yüksək şəffaflıqla dərin kosmos müşahidələri üçün əla məkan.",
+    "ru": "Горное плато в окрестностях села Хафтасов (Исмаиллы): чистое загородное небо, Bortle 3.7 и высокая прозрачность атмосферы для астрофотографии и кемпинга.",
+    "en": "Mountain plateau near Haftasov village in Ismayilli: clean rural dark skies, Bortle 3.7, and high atmospheric transparency for astrocamping and deep-sky imaging."
+  },
+  "cover": {
+    "file": "cover.jpg",
+    "alt": {
+      "az": "Həftəsovda astrokamp və ulduzlu gecə səması",
+      "ru": "Астрокемпинг и звездное ночное небо в Хафтасове",
+      "en": "Astrocamp and starry night sky at Haftasov"
+    },
+    "credit": "Faik Nagiyev / Həvəskar Astronomlar Cəmiyyəti"
+  },
+  "publishedAt": "2026-09-01T15:35:00.000Z",
+  "updatedAt": "2026-09-01T15:35:00.000Z"
+}
