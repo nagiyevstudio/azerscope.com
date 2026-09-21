@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Privacy from './pages/Privacy';
@@ -8,6 +10,16 @@ import './i18n/config';
 import './styles/index.css';
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const lang = i18n.language?.slice(0, 2) || 'en';
+    document.documentElement.lang = lang;
+    if (t('meta.title')) {
+      document.title = t('meta.title');
+    }
+  }, [t, i18n.language]);
+
   return (
     <Router>
       <div className="cosmic-bg" aria-hidden="true">

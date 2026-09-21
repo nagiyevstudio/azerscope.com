@@ -44,7 +44,7 @@ export const UI_STRINGS: Record<Lang, UiStrings> = {
     ecosystemApp: "Tətbiq",
     ecosystemLocations: "Məkanlar",
     ecosystemShop: "Mağaza",
-    ecosystemTelegram: "Telegram Beta",
+    ecosystemTelegram: "Telegram",
   },
   ru: {
     catalogTitle: "Рекомендованные места для наблюдений",
@@ -67,7 +67,7 @@ export const UI_STRINGS: Record<Lang, UiStrings> = {
     ecosystemApp: "Приложение",
     ecosystemLocations: "Локации",
     ecosystemShop: "Магазин",
-    ecosystemTelegram: "Telegram Beta",
+    ecosystemTelegram: "Telegram",
   },
   en: {
     catalogTitle: "Recommended observation locations",
@@ -90,7 +90,7 @@ export const UI_STRINGS: Record<Lang, UiStrings> = {
     ecosystemApp: "App",
     ecosystemLocations: "Locations",
     ecosystemShop: "Shop",
-    ecosystemTelegram: "Telegram Beta",
+    ecosystemTelegram: "Telegram",
   },
 };
 

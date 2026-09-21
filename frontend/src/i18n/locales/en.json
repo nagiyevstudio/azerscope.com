@@ -1,21 +1,21 @@
 {
-  "meta": { "title": "AzerScope Beta | Night Sky Planning App" },
+  "meta": { "title": "AzerScope | Night Sky Planning App" },
   "nav": {
     "features": "Features",
     "tools": "Tools",
     "trust": "Data & Trust",
-    "beta": "Telegram Beta",
+    "beta": "Telegram",
     "download": "Download"
   },
   "hero": {
-    "badge": "Public Beta · Bugs are expected",
+    "badge": "Mobile App for Astronomy",
     "brand": "AzerScope",
     "tagline": "See beyond",
     "kicker": "Precision in Darkness.",
     "title": "Plan the <span class=\"gold\">night sky</span> with confidence.",
     "subtitle": "AzerScope helps astronomy enthusiasts plan observations with weather context, sky visibility, tools, events, and logs.",
     "ctaPrimary": "Download",
-    "ctaSecondary": "Join Telegram Beta",
+    "ctaSecondary": "Join Telegram",
     "store1s": "Download on",
     "store1": "App Store",
     "store2s": "Get it on",
@@ -151,14 +151,14 @@
     "log": "Logitaka"
   },
   "cta": {
-    "label": "Beta Access",
-    "title": "Track the sky better tonight. <span>Join AzerScope beta.</span>",
+    "label": "App",
+    "title": "Track the sky better tonight. <span>Join AzerScope.</span>",
     "sub": "Join the AzerScope community and follow the latest updates.",
     "dl": "Download",
-    "tg": "Open Telegram Beta"
+    "tg": "Open Telegram"
   },
   "footer": {
-    "desc": "Night observation planning app for enthusiasts and astrophotographers. Beta stage, active development.",
+    "desc": "Night observation planning app for astronomy enthusiasts and astrophotographers.",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",
@@ -168,18 +168,18 @@
     "access": "Access Types",
     "trust": "Data & Trust",
     "partners": "Partners",
-    "beta": "Beta Channel",
+    "beta": "Telegram Channel",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "store": "Store Links",
-    "copy": "© 2026 AzerScope. Beta landing page."
+    "copy": "© 2026 AzerScope."
   },
   "ecosystem": {
     "network": "AZERSCOPE NETWORK",
     "app": "App",
     "locations": "Locations",
     "shop": "Shop",
-    "telegram": "Telegram Beta",
+    "telegram": "Telegram",
     "appDesc": "Night sky planning app",
     "locationsDesc": "Dark-sky spots and light pollution maps",
     "shopDesc": "Astronomy equipment and gifts"

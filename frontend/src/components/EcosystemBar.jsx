@@ -66,7 +66,7 @@ export const EcosystemBar = ({ current = 'app' }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="ecosystem-aux-link"
-            title="Telegram Beta"
+            title="Telegram"
           >
             <span>{t('ecosystem.telegram')}</span>
             <ArrowUpRight size={11} />

@@ -75,7 +75,7 @@ const Header = () => {
             href="https://t.me/azerscope"
             target="_blank"
             rel="noreferrer"
-            aria-label="Telegram Beta"
+            aria-label="Telegram"
           >
             <Send size={15} />
           </a>

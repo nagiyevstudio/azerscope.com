@@ -1,23 +1,23 @@
 {
   "meta": {
-    "title": "AzerScope Beta | Приложение для планирования ночных наблюдений"
+    "title": "AzerScope | Приложение для планирования ночных наблюдений"
   },
   "nav": {
     "features": "Возможности",
     "tools": "Инструменты",
     "trust": "Данные и доверие",
-    "beta": "Telegram Beta",
+    "beta": "Telegram",
     "download": "Скачать"
   },
   "hero": {
-    "badge": "Публичная бета · Возможны ошибки",
+    "badge": "Мобильное приложение для астрономии",
     "brand": "AzerScope",
     "tagline": "See beyond",
     "kicker": "Precision in Darkness.",
     "title": "Планируйте <span class=\"gold\">ночное небо</span> уверенно.",
     "subtitle": "AzerScope помогает любителям астрономии планировать наблюдения с учетом погоды, видимости объектов, инструментов и событий.",
     "ctaPrimary": "Скачать",
-    "ctaSecondary": "Вступить в Telegram Beta",
+    "ctaSecondary": "Вступить в Telegram",
     "store1s": "Загрузите в",
     "store1": "App Store",
     "store2s": "Доступно в",
@@ -183,14 +183,14 @@
     "log": "Logitaka"
   },
   "cta": {
-    "label": "Доступ к бете",
-    "title": "Следите за небом лучше. <span>Вступайте в бету AzerScope.</span>",
+    "label": "Приложение",
+    "title": "Следите за небом лучше. <span>Присоединяйтесь к AzerScope.</span>",
     "sub": "Присоединяйтесь к сообществу AzerScope и следите за обновлениями.",
     "dl": "Скачать",
-    "tg": "Открыть Telegram Beta"
+    "tg": "Открыть Telegram"
   },
   "footer": {
-    "desc": "Приложение для планирования наблюдений. Стадия бета-тестирования, активная разработка.",
+    "desc": "Приложение для планирования астрономических наблюдений.",
     "product": "Продукт",
     "company": "Компания",
     "legal": "Юридическая информация",
@@ -200,18 +200,18 @@
     "access": "Типы доступа",
     "trust": "Данные и доверие",
     "partners": "Партнеры",
-    "beta": "Канал беты",
+    "beta": "Telegram-канал",
     "privacy": "Политика конфиденциальности",
     "terms": "Условия использования",
     "store": "Ссылки на сторы",
-    "copy": "© 2026 AzerScope. Beta landing page."
+    "copy": "© 2026 AzerScope."
   },
   "ecosystem": {
     "network": "AZERSCOPE NETWORK",
     "app": "Приложение",
     "locations": "Локации",
     "shop": "Магазин",
-    "telegram": "Telegram Beta",
+    "telegram": "Telegram",
     "appDesc": "Приложение для планирования ночных наблюдений",
     "locationsDesc": "Места наблюдений и карты засветки",
     "shopDesc": "Астрономическое оборудование и подарки"

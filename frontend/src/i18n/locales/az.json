@@ -1,21 +1,21 @@
 {
-  "meta": { "title": "AzerScope Beta | Gecə səmasını planlaşdırma tətbiqi" },
+  "meta": { "title": "AzerScope | Gecə səmasını planlaşdırma tətbiqi" },
   "nav": {
     "features": "Özəlliklər",
     "tools": "Alətlər",
     "trust": "Məlumat və Etibar",
-    "beta": "Telegram Beta",
+    "beta": "Telegram",
     "download": "Yüklə"
   },
   "hero": {
-    "badge": "İctimai Beta · Xətalar ola bilər",
+    "badge": "Astronomiya üçün mobil tətbiq",
     "brand": "AzerScope",
     "tagline": "See beyond",
     "kicker": "Precision in Darkness.",
     "title": "Gecə səmasını <span class=\"gold\">əminliklə</span> planlaşdırın.",
     "subtitle": "AzerScope astronomiya həvəskarlarına hava şəraiti, səmanın görünməsi, alətlər, tədbirlər və qeydlər vasitəsilə müşahidələri planlaşdırmağa kömək edir.",
     "ctaPrimary": "Yüklə",
-    "ctaSecondary": "Telegram Beta-ya qoşul",
+    "ctaSecondary": "Telegram-a qoşul",
     "store1s": "Yüklə",
     "store1": "App Store",
     "store2s": "Yüklə",
@@ -181,11 +181,11 @@
     "log": "Logitaka"
   },
   "cta": {
-    "label": "Beta Giriş",
-    "title": "Səmanı daha yaxşı izləyin. <span>AzerScope beta-ya qoşulun.</span>",
+    "label": "Tətbiq",
+    "title": "Səmanı daha yaxşı izləyin. <span>AzerScope-a qoşulun.</span>",
     "sub": "AzerScope icmasına qoşulun və ən son yenilikləri izləyin.",
     "dl": "Yüklə",
-    "tg": "Telegram Beta-nı aç"
+    "tg": "Telegram-ı aç"
   },
   "footer": {
     "desc": "Həvəskarlar və astrofotoqraflar üçün gecə müşahidə planlayıcısı. İnkişaf mərhələsi.",
@@ -198,18 +198,18 @@
     "access": "Giriş Növləri",
     "trust": "Məlumat və Etibar",
     "partners": "Tərəfdaşlar",
-    "beta": "Beta Kanalı",
+    "beta": "Telegram Kanalı",
     "privacy": "Məxfilik Siyasəti",
     "terms": "İstifadə Şərtləri",
     "store": "Mağaza Linkləri",
-    "copy": "© 2026 AzerScope. Beta səhifəsi."
+    "copy": "© 2026 AzerScope."
   },
   "ecosystem": {
     "network": "AZERSCOPE NETWORK",
     "app": "Tətbiq",
     "locations": "Məkanlar",
     "shop": "Mağaza",
-    "telegram": "Telegram Beta",
+    "telegram": "Telegram",
     "appDesc": "Gecə səmasını planlaşdırma tətbiqi",
     "locationsDesc": "Müşahidə məkanları və qaranlıq səma xəritələri",
     "shopDesc": "Astronomiya avadanlıqları və hədiyyələr"
