@@ -63,7 +63,7 @@ const Terms = () => {
 
         <h2>9. Contact Us</h2>
         <p>If you have any questions about these Terms, please contact us at <a
-                href="mailto:info@azerscope.net">info@azerscope.net</a>.</p>
+                href="mailto:info@azerscope.com">info@azerscope.com</a>.</p>
       </div>
     </section>
   );

@@ -121,7 +121,7 @@ const Privacy = () => {
         <h2>9. Contact Us</h2>
         <div className="contact">
           <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-          <p><strong>Email:</strong> <a href="mailto:info@azerscope.net">info@azerscope.net</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@azerscope.com">info@azerscope.com</a></p>
         </div>
       </div>
     </section>

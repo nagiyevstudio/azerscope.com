@@ -15,7 +15,7 @@ const SECTIONS = [
       'Silinməni təsdiqləyin. Hesab dərhal silinir.',
     ],
     emailTitle: 'Tətbiq quraşdırılmayıbsa',
-    email: 'Hesabınızın e-poçt ünvanından info@azerscope.net ünvanına «Hesabın silinməsi» mövzusu ilə yazın. Sorğunu 30 gün ərzində icra edib cavab veririk.',
+    email: 'Hesabınızın e-poçt ünvanından info@azerscope.com ünvanına «Hesabın silinməsi» mövzusu ilə yazın. Sorğunu 30 gün ərzində icra edib cavab veririk.',
     whatTitle: 'Nə silinir',
     what: [
       'hesab, e-poçt, ad və profil şəkli;',
@@ -34,7 +34,7 @@ const SECTIONS = [
       'Подтвердите удаление. Аккаунт удаляется сразу.',
     ],
     emailTitle: 'Если приложение не установлено',
-    email: 'Напишите на info@azerscope.net с адреса вашего аккаунта, тема «Удаление аккаунта». Мы выполним запрос и ответим в течение 30 дней.',
+    email: 'Напишите на info@azerscope.com с адреса вашего аккаунта, тема «Удаление аккаунта». Мы выполним запрос и ответим в течение 30 дней.',
     whatTitle: 'Что удаляется',
     what: [
       'аккаунт, email, имя и фото профиля;',
@@ -53,7 +53,7 @@ const SECTIONS = [
       'Confirm. Your account is deleted immediately.',
     ],
     emailTitle: 'If the app is not installed',
-    email: 'Email info@azerscope.net from your account’s email address with the subject “Account deletion”. We will complete the request and reply within 30 days.',
+    email: 'Email info@azerscope.com from your account’s email address with the subject “Account deletion”. We will complete the request and reply within 30 days.',
     whatTitle: 'What is deleted',
     what: [
       'your account, email, name and profile photo;',
@@ -93,7 +93,7 @@ const DeleteAccount = () => {
         ))}
 
         <div className="contact">
-          <p><strong>Email:</strong> <a href="mailto:info@azerscope.net?subject=Account%20deletion">info@azerscope.net</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@azerscope.com?subject=Account%20deletion">info@azerscope.com</a></p>
           <p><Link to="/privacy">Privacy Policy</Link></p>
         </div>
       </div>
