@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "AzerScope | Gecə səmasını planlaşdırma tətbiqi" },
+  "meta": {
+    "title": "AzerScope | Gecə səmasını planlaşdırma tətbiqi"
+  },
   "nav": {
     "features": "Özəlliklər",
     "tools": "Alətlər",
@@ -13,7 +15,7 @@
     "tagline": "See beyond",
     "kicker": "Precision in Darkness.",
     "title": "Gecə səmasını <span class=\"gold\">əminliklə</span> planlaşdırın.",
-    "subtitle": "AzerScope astronomiya həvəskarlarına hava şəraiti, səmanın görünməsi, alətlər, tədbirlər və qeydlər vasitəsilə müşahidələri planlaşdırmağa kömək edir.",
+    "subtitle": "AzerScope müşahidələri planlaşdırmağa və astronomiyanı öyrənməyə kömək edir: müşahidə üçün hava, bu gecə səmada nə görünür, 88 bürc, astrotəqvim və üç dildə AstroLab materialları.",
     "ctaPrimary": "Yüklə",
     "ctaSecondary": "Telegram-a qoşul",
     "store1s": "Yüklə",
@@ -30,10 +32,10 @@
     "label": "Məhsul",
     "title": "<span>Real müşahidə gecələri</span> üçün yaradılıb",
     "sub": "Gecə rejimi (UX), praktik hesablamalar və çölə çıxmazdan əvvəl faydalı qərarlar.",
-    "s1": "Əsas bölmələr",
-    "s2": "Astro alətlər",
-    "s3": "İnterfeys dilləri",
-    "s4": "Cari mərhələ"
+    "s1": "xəritəli bürc",
+    "s2": "müşahidəçi aləti",
+    "s3": "interfeys dili",
+    "s4": "günlük müşahidə proqnozu"
   },
   "features": {
     "label": "Əsas Təcrübə",
@@ -49,11 +51,11 @@
     },
     "guide": {
       "t": "AstroGuide",
-      "d": "Hadisələr, astronomik təqvim, alətlər mərkəzi və bürclərin önizləməsi üçün kurasiya olunmuş bölmə."
+      "d": "Hadisələrin astrotəqvimi, müşahidəçi alətləri və xəritələri ilə 88 bürcün hamısı, «Səmada göstər» funksiyası ilə."
     },
     "lab": {
       "t": "AstroLab",
-      "d": "Teqlər, seçilmiş materiallar və öyrənmə üçün ətraflı məlumat səhifələri olan kitabxana."
+      "d": "İlk addımlardan olimpiada səviyyəsinə qədər bələdçilər və məqalələr: gecə səması, teleskoplar, bürclər, fəsillər və lüğət. Azərbaycan, rus və ingilis dillərində."
     },
     "events": {
       "t": "Hadisələr",
@@ -67,13 +69,16 @@
   "screens": {
     "label": "Ekranlar",
     "title": "<span>Qaranlıq şərait</span> üçün uyğunlaşdırılmış interfeys",
-    "sub": "Hazırda yer tutucu skrinşotlar istifadə olunur. Buraxılışdan əvvəl real tətbiq ekranları ilə əvəz ediləcək.",
-    "i1": "Ana səhifə",
-    "i2": "Hava",
-    "i3": "Səma",
-    "i4": "AstroGuide",
-    "i5": "Hadisələr",
-    "i6": "Profil"
+    "sub": "Tətbiqin cari versiyasının real ekranları.",
+    "home": "Ana səhifə",
+    "sky": "Səma",
+    "planet": "Planetlər",
+    "astrolab": "AstroLab",
+    "article": "Material",
+    "constellations": "Bürclər",
+    "forecast": "Proqnoz",
+    "calendar": "AstroTəqvim",
+    "tools": "Alətlər"
   },
   "tools": {
     "label": "AstroAlətlər",
@@ -164,8 +169,8 @@
     "label": "MÜŞAHİDƏ PROQNOZU",
     "title": "Məkanlar üzrə <span>dəqiq ulduz proqnozu</span>",
     "sub": "Azərbaycanın müxtəlif yerləri üçün xüsusi olaraq hesablanmış 7 günlük astronomik müşahidə proqnozu.",
-    "f1_title": "Müşahidə Balları (Astro Score)",
-    "f1_desc": "Hava, buludluluq, rütubət, Ayın fazası və işıq çirklənməsini analiz edərək hər bir məkan üçün 10 ballıq sistemlə müşahidə uyğunluğunu qiymətləndiririk.",
+    "f1_title": "Gecənin qiymətləndirilməsi",
+    "f1_desc": "Buludluluq, rütubət, Ayın fazası və işıq çirklənməsini nəzərə alaraq hər gecəni qiymətləndiririk: əla, qismən görünürlük və ya uyğun deyil. Yaxşı gecədən bir gün əvvəl xatırlatma gəlir.",
     "f2_title": "Məkanların İdarə Edilməsi",
     "f2_desc": "Müşahidə etdiyiniz və ya getmək istədiyiniz yerləri (məsələn, Bakı, Şamaxı, Quba və s.) yadda saxlayın və hər biri üzrə real vaxt proqnozlarını izləyin.",
     "f3_title": "Tövsiyə Olunan Obyektlər",
@@ -200,6 +205,7 @@
     "partners": "Tərəfdaşlar",
     "beta": "Telegram Kanalı",
     "privacy": "Məxfilik Siyasəti",
+    "delete_account": "Hesabın silinməsi",
     "terms": "İstifadə Şərtləri",
     "store": "Mağaza Linkləri",
     "copy": "© 2026 AzerScope."

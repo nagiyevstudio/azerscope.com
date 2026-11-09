@@ -85,6 +85,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/privacy">{t('footer.privacy')}</Link></li>
             <li><Link to="/terms">{t('footer.terms')}</Link></li>
+            <li><Link to="/delete-account">{t('footer.delete_account')}</Link></li>
             <li><a href="#download">{t('footer.store')}</a></li>
           </ul>
         </div>

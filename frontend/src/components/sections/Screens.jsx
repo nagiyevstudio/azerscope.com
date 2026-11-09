@@ -2,20 +2,16 @@ import { useTranslation } from 'react-i18next';
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const screens = [
-  { src:'/assets/img/screens/IMG_2217.png', k:'i1' },
-  { src:'/assets/img/screens/IMG_2218.png', k:'i2' },
-  { src:'/assets/img/screens/IMG_2219.png', k:'i3' },
-  { src:'/assets/img/screens/IMG_2220.png', k:'i4' },
-  { src:'/assets/img/screens/IMG_2221.png', k:'i5' },
-  { src:'/assets/img/screens/IMG_2222.png', k:'i6' },
-];
+// Real device screenshots (app 1.5.x), one set per site language.
+const SCREEN_KEYS = ['home', 'sky', 'planet', 'astrolab', 'article', 'constellations', 'forecast', 'calendar', 'tools'];
+const SCREEN_LANGS = ['az', 'ru', 'en'];
 
 const SCROLL_STEP = 218; // 200px item + 18px gap
 
 const Screens = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const ref = useRef(null);
+  const lang = SCREEN_LANGS.find((l) => i18n.language?.startsWith(l)) || 'en';
 
   const scroll = (dir) => {
     ref.current?.scrollBy({ left: dir * SCROLL_STEP, behavior: 'smooth' });
@@ -37,10 +33,10 @@ const Screens = () => {
         </button>
 
         <div className="c-screenshots" ref={ref}>
-          {screens.map(s => (
-            <figure className="screenshot-item" key={s.k}>
-              <img src={s.src} alt={t(`screens.${s.k}`)} loading="lazy" />
-              <figcaption className="screen-label">{t(`screens.${s.k}`)}</figcaption>
+          {SCREEN_KEYS.map((k) => (
+            <figure className="screenshot-item" key={k}>
+              <img src={`/assets/img/screens/${lang}/${k}.webp`} alt={t(`screens.${k}`)} loading="lazy" width="600" height="1305" />
+              <figcaption className="screen-label">{t(`screens.${k}`)}</figcaption>
             </figure>
           ))}
         </div>

@@ -9,10 +9,10 @@ const Overview = () => {
       <p className="section-sub section-sub--center">{t('overview.sub')}</p>
       <div className="c-stats">
         {[
-          { num: '8',  key: 'overview.s1' },
-          { num: '7+', key: 'overview.s2' },
+          { num: '88', key: 'overview.s1' },
+          { num: '7',  key: 'overview.s2' },
           { num: '3',  key: 'overview.s3' },
-          { num: 'β',  key: 'overview.s4' },
+          { num: '7',  key: 'overview.s4' },
         ].map(s => (
           <article className="stat-card glass" key={s.key}>
             <div className="number">{s.num}</div>

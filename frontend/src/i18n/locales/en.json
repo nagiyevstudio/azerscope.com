@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "AzerScope | Night Sky Planning App" },
+  "meta": {
+    "title": "AzerScope | Night Sky Planning App"
+  },
   "nav": {
     "features": "Features",
     "tools": "Tools",
@@ -13,7 +15,7 @@
     "tagline": "See beyond",
     "kicker": "Precision in Darkness.",
     "title": "Plan the <span class=\"gold\">night sky</span> with confidence.",
-    "subtitle": "AzerScope helps astronomy enthusiasts plan observations with weather context, sky visibility, tools, events, and logs.",
+    "subtitle": "AzerScope helps you plan observations and learn astronomy: weather for observing, what's up tonight, all 88 constellations, an astro calendar and AstroLab lessons in three languages.",
     "ctaPrimary": "Download",
     "ctaSecondary": "Join Telegram",
     "store1s": "Download on",
@@ -30,39 +32,72 @@
     "label": "Product",
     "title": "Built for <span>real observing nights</span>",
     "sub": "Night UX, practical calculations, and useful decisions before you go outside.",
-    "s1": "Core sections",
-    "s2": "Astro tools",
-    "s3": "UI languages",
-    "s4": "Current stage"
+    "s1": "constellations with maps",
+    "s2": "observer tools",
+    "s3": "interface languages",
+    "s4": "day observing forecast"
   },
   "features": {
     "label": "Core Experience",
     "title": "Before, during, and after <span>an observation session</span>",
     "sub": "AzerScope combines observation context, learning content, events, and logging in one mobile workflow.",
-    "weather": { "t": "Weather", "d": "Night-ready weather parameters: hourly forecast of cloud cover, humidity, dew point, wind, and light pollution." },
-    "sky": { "t": "Sky", "d": "What is visible for your location and time: Sun, Moon, planets, and deep-sky guidance with practical visibility hints." },
-    "guide": { "t": "AstroGuide", "d": "Events, astro calendar, practical tools, and constellation previews in one curated section." },
-    "lab": { "t": "AstroLab", "d": "Learning library with tags, curated materials, and detailed object guides for reference." },
-    "events": { "t": "Events", "d": "Event list, detail pages, attendance confirmation, and participation history integrated into your profile." },
-    "obs": { "t": "Observations", "d": "Personal observation journal with notes and session context, designed for future filters and statistics." }
+    "weather": {
+      "t": "Weather",
+      "d": "Night-ready weather parameters: hourly forecast of cloud cover, humidity, dew point, wind, and light pollution."
+    },
+    "sky": {
+      "t": "Sky",
+      "d": "What is visible for your location and time: Sun, Moon, planets, and deep-sky guidance with practical visibility hints."
+    },
+    "guide": {
+      "t": "AstroGuide",
+      "d": "Astro calendar of events, observer tools and all 88 constellations with star maps and “Show in Sky”."
+    },
+    "lab": {
+      "t": "AstroLab",
+      "d": "Guides and articles from first steps to olympiad level: the night sky, telescopes, constellations, seasons and a glossary. In Azerbaijani, Russian and English."
+    },
+    "events": {
+      "t": "Events",
+      "d": "Event list, detail pages, attendance confirmation, and participation history integrated into your profile."
+    },
+    "obs": {
+      "t": "Observations",
+      "d": "Personal observation journal with notes and session context, designed for future filters and statistics."
+    }
   },
   "screens": {
     "label": "Screens",
     "title": "UI tuned for <span>dark conditions</span>",
-    "sub": "Placeholder screenshots are used now. Replace with your prepared real app screens before launch.",
-    "i1": "Home", "i2": "Weather", "i3": "Sky", "i4": "AstroGuide", "i5": "Events", "i6": "Profile"
+    "sub": "Real screens from the current version of the app.",
+    "home": "Home",
+    "sky": "Sky",
+    "planet": "Planets",
+    "astrolab": "AstroLab",
+    "article": "Guide",
+    "constellations": "Constellations",
+    "forecast": "Forecast",
+    "calendar": "Astro Calendar",
+    "tools": "Tools"
   },
   "tools": {
     "label": "AstroTools",
     "title": "Field-ready calculations, <span>not decorative widgets</span>",
     "sub": "Built from real app tools for observers and astrophotographers.",
-    "t1": "Magnification", "d1": "Telescope focal length / eyepiece focal length.",
-    "t2": "True FOV", "d2": "True field of view and Moon-in-frame context.",
-    "t3": "Coordinate Converter", "d3": "Time (HMS) and Degrees (DMS) to decimal format and back.",
-    "t4": "Filter Picker", "d4": "Filter suggestions by object and conditions.",
-    "t5": "Exposure Rule", "d5": "Max exposure estimate by focal length and sensor.",
-    "t6": "Compass", "d6": "Sensor-based heading with calibration state.",
-    "t7": "Focus & Depth", "d7": "Optimize your focus and depth of field for perfect night shots."
+    "t1": "Magnification",
+    "d1": "Telescope focal length / eyepiece focal length.",
+    "t2": "True FOV",
+    "d2": "True field of view and Moon-in-frame context.",
+    "t3": "Coordinate Converter",
+    "d3": "Time (HMS) and Degrees (DMS) to decimal format and back.",
+    "t4": "Filter Picker",
+    "d4": "Filter suggestions by object and conditions.",
+    "t5": "Exposure Rule",
+    "d5": "Max exposure estimate by focal length and sensor.",
+    "t6": "Compass",
+    "d6": "Sensor-based heading with calibration state.",
+    "t7": "Focus & Depth",
+    "d7": "Optimize your focus and depth of field for perfect night shots."
   },
   "pricing": {
     "label": "Plans",
@@ -134,8 +169,8 @@
     "label": "OBSERVATION FORECAST",
     "title": "Precise <span>stargazing forecast</span> by location",
     "sub": "7-day astronomical observing conditions calculated specifically for different observation points in Azerbaijan.",
-    "f1_title": "Observation Score (Astro Score)",
-    "f1_desc": "We analyze cloud cover, humidity, moon phase, and light pollution to evaluate observing suitability on a 10-point scale for each location.",
+    "f1_title": "Night rating",
+    "f1_desc": "We weigh cloud cover, humidity, Moon phase and light pollution and rate every night: great, partly visible or poor. You get a reminder a day before a good night.",
     "f2_title": "Location Management",
     "f2_desc": "Save your observing sites (such as Baku, Shamakhi, Guba) and follow real-time stargazing forecasts for each location individually.",
     "f3_title": "Recommended Objects",
@@ -170,6 +205,7 @@
     "partners": "Partners",
     "beta": "Telegram Channel",
     "privacy": "Privacy Policy",
+    "delete_account": "Delete account",
     "terms": "Terms of Use",
     "store": "Store Links",
     "copy": "© 2026 AzerScope."

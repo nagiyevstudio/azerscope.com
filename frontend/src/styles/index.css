@@ -957,6 +957,7 @@
 
  .screenshot-item img {
    width: 100%;
+   height: auto;
    border-radius: 22px;
    border: 1px solid var(--glass-border);
    margin-bottom: 10px;
@@ -1446,6 +1447,24 @@
    list-style: disc;
    padding-left: 20px;
    margin-bottom: 20px;
+ }
+
+ .legal-container ol.legal-steps {
+   list-style: decimal;
+   padding-left: 22px;
+   margin-bottom: 20px;
+ }
+
+ .legal-container ol.legal-steps li {
+   font-size: 14px;
+   color: var(--muted);
+   margin-bottom: 8px;
+ }
+
+ .legal-lang-block + .legal-lang-block {
+   margin-top: 40px;
+   padding-top: 8px;
+   border-top: 1px solid var(--glass-border);
  }
 
  .legal-container ul li {
