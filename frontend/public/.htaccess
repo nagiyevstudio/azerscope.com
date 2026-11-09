@@ -1,0 +1,21 @@
+# azerscope.com — React landing (react-router: /privacy, /terms, /delete-account).
+# Deployed by .github/workflows/deploy.yml (FTP). /locations/ is a separate Astro site.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Old static site URLs (privacy.html / terms.html may still be linked from the stores).
+  RewriteRule ^privacy\.html$ /privacy [R=301,L]
+  RewriteRule ^terms\.html$ /terms [R=301,L]
+
+  # Serve real files and folders as is.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Leave the Astro locations site to its own 404 handling.
+  RewriteRule ^locations(/|$) - [L]
+
+  # Everything else is a client-side route.
+  RewriteRule ^ index.html [L]
+</IfModule>
