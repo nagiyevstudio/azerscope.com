@@ -1686,3 +1686,27 @@
      transition-duration: .01ms !important;
    }
  }
+/* Award participant badges (MilliNet, NETTY). Images are served by the organisers' sites, as they require. */
+.footer-awards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-awards a {
+  display: inline-flex;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.footer-awards a:hover {
+  opacity: 1;
+}
+
+.footer-awards img {
+  height: 52px;
+  width: auto;
+  border-radius: 6px;
+}

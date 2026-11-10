@@ -58,6 +58,17 @@ const Footer = () => {
             <img src="/assets/img/logo.png" alt="AzerScope" />
           </Link>
           <p>{t('footer.desc')}</p>
+          <div className="footer-awards">
+            {/* MilliNet 2026 participant banner (project id 771). Their banner.js uses
+                document.write, which does not work in a SPA, so the same markup is inlined. */}
+            <a href="https://millinet.az" target="_blank" rel="noopener" title="MilliNet 2026">
+              <img src="https://millinet.az/images/participant.png?v=2" alt="MilliNet 2026 iştirakçısı" width="200" height="103" loading="lazy" />
+            </a>
+            {/* NETTY 2026 participant badge from the official kit (netty.az/formember.zip). */}
+            <a href="https://www.netty.az/az/nominants" target="_blank" rel="noopener" title="NETTY 2026">
+              <img src="/assets/img/awards/netty-2026-participant.png" alt="NETTY 2026 iştirakçısı" width="403" height="213" loading="lazy" />
+            </a>
+          </div>
         </div>
         
         <div className="footer-col">
